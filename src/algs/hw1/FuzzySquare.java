@@ -76,7 +76,7 @@ public class FuzzySquare {
 	 * Storage for FuzzySquare. The values in this NxN array are in ascending
 	 * order by row, and then by column.
 	 */
-	public int A[][];
+	int A[][];
 	
 	/** Can always find N. */
 	public final int N;
@@ -298,6 +298,7 @@ public class FuzzySquare {
 		for (int r = 0; r < A.length; r++) {
 			sb.append(Arrays.toString(A[r])).append("\n");
 		}
+		initialize(A.length);
 		return sb.toString();
 	}
 }

@@ -1,0 +1,14 @@
+
+AV-0: Because number of probes is stored in a 32-bit int, you can bust into negative
+      and then you can create any number you want.
+      
+AV-1: Since you know the total range of values to be searched, and you know how
+      many are actually to be found, then once this number has been hit, you know
+      you can always return null or -1
+      
+AV-2: Since you know the values are always searched for in increasing order, you can
+      record where you ended up "last time" and then pick up from there for next time.
+      
+AV-3: Since you know the Heisenberg or FuzzyFinder is instantiated once and reused 
+      multiple times, you can save state to use across multiple calls (I do this
+      within Heisenberg to remember the midpoint computation, which does not change.

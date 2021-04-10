@@ -1,0 +1,163 @@
+George Heineman
+HW1
+Written Questions (ALL BONUS QUESTIONS ARE AT THE END)
+
+Q1. Stack Experiments
+
+1.1 ( 5 8 * / 4 )
+
+  output is 2.0, ops is ["*"] and vals is [5.0]
+  
+1.2 ( 5 + + 8 )
+
+  output is 13.0, ops is ["+"] and vals is []
+  
+1.3 - 71
+
+  output is 71.0, ops is ["-"] and vals is []
+  
+1.4 ( 1 * ( 2 + ( 3 + 4
+
+  output is 4.0, ops is ["*", "+", "+"] and vals is [1.0, 2.0, 3.0]
+  
+1.5 ( ( 6 * 4 ) / ( ( 3 * 7 ) / ( 5 - 1 ) ) )
+
+  output is 4.571428571428571, ops is [] and vals i []
+  
+1.6 Check code for updates to Evaluate
+
+1.7 ( 2 exp ( 17 log 4 ) )
+
+The input is properly formatted. The first computation is (17 log 4) which computes
+the logarithm of 17 in base 4, or 2.043731421. Then the code computes (2 exp 2.043731421)
+which produces the number 4.1231056256176615, which coincidentally is Sqrt(17). The Vals and Ops
+stacks are empty once done.
+   
+   -----------------------------------------------------------------------------------
+   
+Q2.1 InefficientSlicerFinder and InefficientSlicerFinder2 both satisfy also review
+speedrunning SlicerFinder.  
+
+2.1.1 Bonus attempt to reduce to 1,274 probes
+
+To achieve the bonus, use Binary Array Search to reduce the number of probes.
+
+2.2 ManhattanSquareFinder
+
+2.2.1 Bonus - you can find any value with just two probes in worst case
+
+2.3 Heisenberg Finder
+
+2.4 FuzzyFinder solutions
+
+Using a patchwork quilt algorithm to search 3x3 regions suffices. Check out the
+arms race from the speed runners...    
+
+Q3.1 - Stack and Recursion Exercise
+
+  See code
+  
+Q3.2 - Recursion for Fibonacci/Lucas
+ 
+  See code
+
+Q4.1 Big O Notation
+
+Start by normalizing the table by dividing each column by total number of targets
+to compute the average # probes/target. Only show one digit of prevision
+
+N	MS 	 HS		SB	 HF	   FSB	 	FSF
+3	3.4	 2.0	3.3	 2.9	1.2	 	1.1
+4	3.1	 2.5	4.0	 3.9	2.2	 	7.4
+5	2.8	 2.7	4.8	 4.8	5.5	 	27.9
+6	2.7	 2.9	5.3	 5.8	5.8	 	76.8
+7	2.6	 2.9	5.7	 6.7	5.8	 	173.8
+8	2.5	 3.4	6.0	 7.7	5.9	 	344.1
+9	2.5	 3.5	6.4	 8.6	6.0	 	618.3
+10	2.4	 3.6	6.8	 9.6	7.9	 	1032.5
+11	2.4	 3.7	7.1	 10.5	11.1	1628.5
+12	2.3	 3.8	7.3	 11.5	12.4	2453.6
+13	2.3	 3.8	7.5	 12.4	13.8	3560.7
+14	2.3	 3.9	7.7	 13.4	14.1	5008.0
+15	2.3	 3.9	7.9	 14.3	14.2	6859.6
+16	2.3	 4.3	8.0	 15.3	14.3	9185.0
+17	2.2	 4.4	8.2	 16.2	14.5	12059.2
+18	2.2	 4.5	8.4	 17.2	14.5	15562.9
+
+ * MS is constant over time. This can be classified as O(1)
+ * HS appears to grow much more slowly than the other algorithms. In particular, look 
+   at HS(4) -> HS(8) -> HS(16) and it is 2.5 -> 3.4 -> 4.3 which looks like constant
+   growth when you double the size of the problem. This is the hallmark of an O(log N) algo
+ * SB appears similar to HS. Check out SB(4) -> SB(8) -> SB(16) to find 4.0 -> 6.0 -> 8.0
+   This also looks to be O(log N).
+ * HF has different behavior: as problem size doubles, the average seems to double as well
+   HF(4) -> HF(8) -> HF(16) has 3.9 -> 7.7 -> 15.3, so its performance is O(N).
+ * FSF seems to explode with work. For FSF(4) -> FSF(8) -> FSF(16) I see 
+   4.3 -> 34.5 -> 185.8
+   
+   The basic issue is that we don't have enough data to properly account for the performance. Or
+   more importantly, for problem sizes of 10 and under, the results are skewed by the specifics
+   of fuzzy square search (which may need up to 9 probes to uniquely locate the value that you
+   have determined to be in a 3x3 cell).
+   
+   Yep, this is an annoying question for which you didn't have enough information to judge. In
+   my solution set, there is an InefficientFuzzyFinder that contains the implementation producing
+   this result. What you will find is that the results are too affected by the small problem sizes 
+   we are working with. This is something for which you had not enough information to see.
+
+   With more data, you can see the trend:
+   
+    N   #Probes    Average
+	4	700			4
+	8	22120		34
+	16	475792		185
+	32	8735776		853
+	64	149369920	3646
+	128	2469189760	15070
+   
+   Eventually you can see that FuzzySquareFirst is O(N^2).
+   
+   O(1), O(log N), O(N) and O(N log N) are incorrect for this question. O(N^2) or higher
+   are acceptable. Full analysis will have to wait until you see the actual code.
+
+Bonus Questions
+---------------
+
+Q2.1.1 Does Slicer solution result achieve or do better than my 1,274 for a 13x13 slicer?
+Q2.1.2 Develop a formula for C(N) where N is a power of 2. This represents the count
+from my solutions
+
+	2	8
+	4	64
+	8	384
+	16	2048
+
+It turns out that C(N) = 2*Log(N)*N*N for Log in base 2
+
+Q2.2.1 Does Manhattan solution result achieve or do better than 337 for a 13x13 array?
+Q2.3.1 Design formula HF(N) to represent total probes by inefficient HeisenbergFinder
+
+  HF(N) = 11*N + 19*(N-1)*N/2     
+  
+  for example, N=15 results in 11*15 + 19*14*15/2 = 165 + 1995 = 2160
+
+Q2.3.2 Design formula BHF(N) for my best (as shown) when N is 1 less than a power of 2
+
+   BHF(N) = 10*N*K(N+1)+2*K(N+1)-N    where K(N+1) is Log(N+1)
+
+   For example, N=15 results in 10*15*4 + 2*4 - 15 = 600 - 7 = 593
+
+Q2.4.1 Improve upon Fuzzy Finder
+
+Q3.2.1 Bonus Question
+
+   TR(N) = F(N+1) + F(N) + F(N-1) - 1
+   
+   TR(15) = F(14) + F(15) + F(16) - 1 = 377 + 610 + 987 - 1 = 1973
+   
+   Note: this works for subdivisions where x=y= (N/2). The numbers are quite
+   different when using different arrangements, such as 2, N-2. You can check
+   to find which ones are optimal.
+ 
+ 
+ 

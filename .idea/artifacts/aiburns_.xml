@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="aiburns.">
+    <output-path>$PROJECT_DIR$/out/artifacts/aiburns_</output-path>
+    <root id="root">
+      <element id="archive" name="aiburns.zip" />
+    </root>
+  </artifact>
+</component>

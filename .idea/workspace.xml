@@ -1,11 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="170bacc9-d427-472d-9f68-8394a43d8875" name="Default Changelist" comment="" />
+    <list default="true" id="170bacc9-d427-472d-9f68-8394a43d8875" name="Default Changelist" comment="I actually did some of the work so far">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/aiburns_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_5_7_01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aiburns/hw2/DeckTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/PartitionWeakness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/RecursiveMaxFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/SortComparison.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/instrumented/SortAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/days/day09/AnotherTimingBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/WrittenQuestions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/solution/FuzzyFinderNegativeBust.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/solution/HeisenbergFinderBendsRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/solution/InefficientFuzzyFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/solution/PoorSearchFuzzyFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/solution/SlicerFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/solution/SpeedRunning.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/solution/WrittenQuestions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/submission/Evaluate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw1/submission/Q3_PostFixToInfix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algs/hw2/submission/WrittenQuestions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgosWork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgosWork.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw1/Evaluate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw1/Evaluate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw2/MyDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw2/MyDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day01/BinaryIntSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day01/DefectiveBinaryIntSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day01/TimingComparison.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/Anagram13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/Anagram15.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/CompareOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/FiniteOrInfinite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/RandomTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/ThreeSumModified.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/AnagramImproved.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/FindMaxSecondLargestTournament.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/SingleSpurProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/SpurExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/AnagramFinal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/DoublingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/FixedCapacityStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/ResizingArrayStackResizeStrategies.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/OptimizedRawArraysHeinemanFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/RawArraysHeinemanFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/StringBuilderHeinemanFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw1/Coordinate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw1/FuzzySquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw1/FuzzySquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw1/Heisenberg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw1/ManhattanSquare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw1/Slicer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw1/api/IFuzzySquareFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw1/api/IHeisenbergFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw1/api/IManhattanSquareFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw2/AllCards.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw2/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw2/Deck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw2/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw2/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw2/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw2/Suit.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -16,6 +84,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -29,21 +98,26 @@
     <option name="projectConfigVersion" value="2" />
   </component>
   <component name="ProjectId" id="1qFt3ViSkfwh6Qn1C8I46830eQm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="module" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AlgosGitRepo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,49 +125,28 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sciab\Documents\FILES FOR SCHOOL\FreshmanYear\CS 2223\AlgosWork\src" />
+      <recent name="C:\Users\sciab\Documents\FILES FOR SCHOOL\FreshmanYear\CS 2223\AlgosWork\AlgosGitRepo\Algorithms D2021\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sciab\Documents\FILES FOR SCHOOL\FreshmanYear\CS 2223\AlgosWork\src" />
       <recent name="C:\Users\sciab\Documents\FILES FOR SCHOOL\FreshmanYear\CS 2223\AlgosWork\src\aiburns\hw2" />
       <recent name="C:\Users\sciab\Documents\FILES FOR SCHOOL\FreshmanYear\CS 2223\AlgosWork\src\aiburns\hw1" />
       <recent name="C:\Users\sciab\Documents\FILES FOR SCHOOL\FreshmanYear\CS 2223\AlgosWork\src\algs\hw1" />
       <recent name="C:\Users\sciab\Documents\FILES FOR SCHOOL\FreshmanYear\CS 2223\AlgosWork\src\aiburns\hw1\submission" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Q3_PostFixToInfix">
-    <configuration name="ContinuousFraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aiburns.hw2.ContinuousFraction" />
-      <module name="AlgosWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aiburns.hw2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MaxPQ">
     <configuration name="FuzzyFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aiburns.hw1.FuzzyFinder" />
-      <module name="AlgosWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aiburns.hw1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HeisenbergFinder (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aiburns.hw1.HeisenbergFinder" />
       <module name="AlgosWork" />
       <extension name="coverage">
         <pattern>
@@ -118,8 +171,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManhattanSquareFinder (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ManhattanSquareFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aiburns.hw1.ManhattanSquareFinder" />
+      <module name="AlgosWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aiburns.hw1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxPQ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algs.days.day11.MaxPQ" />
+      <module name="AlgosWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algs.days.day11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q3_Fibonacci (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aiburns.hw1.Q3_Fibonacci" />
       <module name="AlgosWork" />
       <extension name="coverage">
         <pattern>
@@ -145,8 +224,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q3_PostFixToInfix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aiburns.hw1.Q3_PostFixToInfix" />
+    <configuration name="SlicerFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aiburns.hw1.SlicerFinder" />
       <module name="AlgosWork" />
       <extension name="coverage">
         <pattern>
@@ -161,23 +240,26 @@
     <list>
       <item itemvalue="Application.HeisenbergFinder" />
       <item itemvalue="Application.Q3_Fibonacci" />
+      <item itemvalue="Application.ManhattanSquareFinder" />
       <item itemvalue="Application.FuzzyFinder" />
-      <item itemvalue="Application.ManhattanSquareFinder (1)" />
-      <item itemvalue="Application.HeisenbergFinder (1)" />
-      <item itemvalue="Application.ContinuousFraction" />
-      <item itemvalue="Application.Q3_PostFixToInfix" />
+      <item itemvalue="Application.SlicerFinder" />
+      <item itemvalue="Application.Q3_Fibonacci (1)" />
+      <item itemvalue="Application.MaxPQ" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Q3_PostFixToInfix" />
-        <item itemvalue="Application.ContinuousFraction" />
-        <item itemvalue="Application.HeisenbergFinder (1)" />
-        <item itemvalue="Application.ManhattanSquareFinder (1)" />
+        <item itemvalue="Application.MaxPQ" />
+        <item itemvalue="Application.Q3_Fibonacci (1)" />
         <item itemvalue="Application.FuzzyFinder" />
+        <item itemvalue="Application.SlicerFinder" />
+        <item itemvalue="Application.ManhattanSquareFinder" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\sciab\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="170bacc9-d427-472d-9f68-8394a43d8875" name="Default Changelist" comment="" />
@@ -209,6 +291,18 @@
       <workItem from="1617656847929" duration="960000" />
       <workItem from="1617657872082" duration="71000" />
       <workItem from="1617658443817" duration="122000" />
+      <workItem from="1617658581535" duration="3242000" />
+      <workItem from="1617717543801" duration="2773000" />
+      <workItem from="1617721183047" duration="88000" />
+      <workItem from="1617721290364" duration="1550000" />
+      <workItem from="1617723465911" duration="2229000" />
+      <workItem from="1617767036582" duration="167000" />
+      <workItem from="1617890241534" duration="1525000" />
+      <workItem from="1617901436414" duration="119000" />
+      <workItem from="1617908130103" duration="2173000" />
+      <workItem from="1617928023926" duration="325000" />
+      <workItem from="1617976699312" duration="1391000" />
+      <workItem from="1618084845563" duration="112000" />
     </task>
     <servers />
   </component>
@@ -227,6 +321,11 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="I actually did some of the work so far" />
+    <option name="LAST_COMMIT_MESSAGE" value="I actually did some of the work so far" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -234,11 +333,6 @@
           <url>file://$PROJECT_DIR$/src/aiburns/hw1/SlicerFinder.java</url>
           <line>168</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/aiburns/hw1/Evaluate.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
