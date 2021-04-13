@@ -29,7 +29,7 @@ package edu.princeton.cs.algs4;
 /**
  *  The {@code PatriciaST} class provides an implementation of an unordered
  *  symbol table of key-value pairs, with the restriction that the key is of
- *  class {@link java.lang.String}. It supports the usual <em>put</em>,
+ *  class {@link String}. It supports the usual <em>put</em>,
  *  <em>get</em>, <em>contains</em>, <em>delete</em>, <em>size</em>, and
  *  <em>is-empty</em> methods. It also provides a <em>keys</em> method for
  *  iterating over all of the keys. A symbol table implements the
@@ -47,7 +47,7 @@ package edu.princeton.cs.algs4;
  *  <p>
  *  Unlike other generic symbol table implementations that can accept a
  *  parameterized key type, this symbol table class can only accommodate keys
- *  of class {@link java.lang.String}. This unfortunate restriction stems from a
+ *  of class {@link String}. This unfortunate restriction stems from a
  *  limitation in Java. Although Java provides excellent support for generic
  *  programming, the current infrastructure somewhat limits generic collection
  *  implementations to those that employ comparison-based or hash-based methods.
@@ -448,7 +448,7 @@ public class PatriciaST<Value> {
             else    StdOut.printf("PASS %d TESTS FAILED\n",    countPass);
         } while (ok && countPass < limitPass);
 
-        if (!ok) throw new java.lang.RuntimeException("TESTS FAILED");
+        if (!ok) throw new RuntimeException("TESTS FAILED");
     }
 }
 

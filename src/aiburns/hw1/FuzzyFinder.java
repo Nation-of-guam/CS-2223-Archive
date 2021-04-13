@@ -28,6 +28,7 @@ public class FuzzyFinder implements IFuzzySquareFinder {
 		return bump(fs, target);
 	}
 
+
 	public Coordinate bump(FuzzySquare fs, int target){
 		Coordinate toReturn = null;
 

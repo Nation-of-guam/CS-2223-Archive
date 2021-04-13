@@ -102,7 +102,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
     /**
      * Removes and returns the item most recently added to this stack.
      * @return the item most recently added
-     * @throws java.util.NoSuchElementException if this stack is empty
+     * @throws NoSuchElementException if this stack is empty
      */
     public Item pop() {
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");
@@ -118,7 +118,7 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
     /**
      * Returns (but does not remove) the item most recently added to this stack.
      * @return the item most recently added to this stack
-     * @throws java.util.NoSuchElementException if this stack is empty
+     * @throws NoSuchElementException if this stack is empty
      */
     public Item peek() {
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");

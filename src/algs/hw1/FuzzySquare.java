@@ -1,9 +1,9 @@
 package algs.hw1; // DO NOT COPY THIS CLASS INTO YOUR PROJECT AREA. USE AS IS
 
+import algs.hw1.api.IFuzzySquareFinder;
+
 import java.util.Arrays;
 import java.util.Random;
-
-import algs.hw1.api.IFuzzySquareFinder;
 
 /**
  * Creates an NxN two-dimensional array, A, containing a collection 
@@ -298,7 +298,7 @@ public class FuzzySquare {
 		for (int r = 0; r < A.length; r++) {
 			sb.append(Arrays.toString(A[r])).append("\n");
 		}
-		initialize(A.length);
+
 		return sb.toString();
 	}
 }

@@ -43,7 +43,7 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
      * Worst case is O(d)
      *
      * @param  d dimension of the heap
-     * @throws java.lang.IllegalArgumentException if {@code d < 2}
+     * @throws IllegalArgumentException if {@code d < 2}
      */
 	public MultiwayMinPQ(int d) {
 		if (d < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
@@ -59,7 +59,7 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
      *
      * @param  d dimension of the heap
      * @param  comparator a Comparator over the keys
-     * @throws java.lang.IllegalArgumentException if {@code d < 2}
+     * @throws IllegalArgumentException if {@code d < 2}
      */
 	public MultiwayMinPQ(Comparator<Key> comparator, int d) {
 		if (d < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
@@ -75,7 +75,7 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
      *
      * @param  d dimension of the heap
      * @param  a an array of keys
-     * @throws java.lang.IllegalArgumentException if {@code d < 2}
+     * @throws IllegalArgumentException if {@code d < 2}
      */
 	public MultiwayMinPQ(Key[] a, int d) {
 		if (d < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
@@ -93,7 +93,7 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
      * @param  d dimension of the heap
      * @param  comparator a Comparator over the keys
      * @param  a an array of keys
-     * @throws java.lang.IllegalArgumentException if {@code d < 2}
+     * @throws IllegalArgumentException if {@code d < 2}
      */
 	public MultiwayMinPQ(Comparator<Key> comparator, Key[] a, int d) {
 		if (d < 2) throw new IllegalArgumentException("Dimension should be 2 or over");
@@ -139,7 +139,7 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 	/**
 	 * Gets the minimum key currently in the queue
 	 * Worst case is O(1)
-	 * @throws java.util.NoSuchElementException if the priority queue is empty
+	 * @throws NoSuchElementException if the priority queue is empty
 	 * @return the minimum key currently in the priority queue
 	 */
 	public Key minKey() {
@@ -150,7 +150,7 @@ public class MultiwayMinPQ<Key> implements Iterable<Key> {
 	/**
 	 * Deletes the minimum key
 	 * Worst case is O(d*log-d(n))
-	 * @throws java.util.NoSuchElementException if the priority queue is empty
+	 * @throws NoSuchElementException if the priority queue is empty
 	 * @return the minimum key
 	 */
 	public Key delMin() {
