@@ -2,3 +2,8 @@ Aidan Burns
 HW2
 Written Questions
 
+
+Q1.3.1
+The Minimum size of deck that cannot be reversed is: 5
+
+

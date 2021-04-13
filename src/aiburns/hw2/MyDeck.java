@@ -46,7 +46,7 @@ public class MyDeck extends Deck {
 	 * Performance must be O(N) where N is max_rank.
 	 */
 	public MyDeck(int max_rank) {
-		if (max_rank < Card.ACE || max_rank > Card.KING) { throw new IllegalArgumentException("max_rank must be between " + Card.ACE + " and " + Card.KING + " respectively"); }
+		if (max_rank < Card.ACE) { throw new IllegalArgumentException("max_rank must be above " + Card.ACE ); }
 
 		Suit[] suits;
 		suits = Suit.values();
@@ -86,27 +86,41 @@ public class MyDeck extends Deck {
 
 	@Override
 	public boolean match(Card c, int n) {
-		return (c.equals(new Card(Suit.DIAMONDS, n))) ||
-				(c.equals(new Card(Suit.HEARTS, n))) ||
-				(c.equals(new Card(Suit.SPADES, n))) ||
-				(c.equals(new Card(Suit.CLUBS, n)));
+		if (n > size){
+			throw new IndexOutOfBoundsException("n is greater than the size, " + n + " exceeds "+ size);
+		}
+		Node nodeIterative = first;
+
+		for (int i = 1; i < n; i++) {
+			nodeIterative = nodeIterative.next;
+		}
+
+		return nodeIterative.card.equals(c);
 	}
 
 	@Override
 	public Deck copy() {
-		MyDeck toReturn = new MyDeck();
-		toReturn.first = first;
-		toReturn.last = last;
-		toReturn.size = size;
-		return toReturn;
+		return (Deck) copyMyDeck();
 	}
 
 	protected MyDeck copyMyDeck() {
-
 		MyDeck toReturn = new MyDeck();
-		toReturn.first = first;
-		toReturn.last = last;
+
+		Node thisCopy = first;
+
+		Node iterativeNode = new Node(thisCopy.card);
+		toReturn.first = iterativeNode;
 		toReturn.size = size;
+		thisCopy = thisCopy.next;
+
+		while (thisCopy.next != null){
+			iterativeNode.next = new Node(thisCopy.card);
+			iterativeNode = iterativeNode.next;
+			thisCopy = thisCopy.next;
+		}
+		iterativeNode.next = new Node(thisCopy.card);
+		toReturn.last = thisCopy;
+
 
 		return toReturn;
 	}
@@ -180,6 +194,7 @@ public class MyDeck extends Deck {
 			secondNode = otherNode;
 			temp.next = secondNode;
 			secondNode = secondNode.next;
+			temp = temp.next;
 		}
 
 		while (firstNode != null && secondNode != null){
@@ -216,23 +231,39 @@ public class MyDeck extends Deck {
 	}
 
 	@Override
+	public String toString(){
+		return representation();
+	}
+
+	/**
+	 * contract::=
+	 * @return false if in reverse order, true in order
+	 */
+	@Override
 	public boolean isInOrder() {
+		Node cur = first;
+		while (cur.next != null){
+			if (cur.card.compareTo(cur.next.card) >= 0){
+				return false;
+			}
+			cur = cur.next;
+		}
+		return true;
+	}
+
+
+	/**
+	 *
+	 * @return true if in reverse order, false in order
+	 */
+	@Override
+	public boolean isInReverseOrder() {
 		Node cur = first;
 		for (int i = 0; i < size-1; i++) {
 			if (cur.card.compareTo(cur.next.card) <= 0){
 				return false;
 			}
-		}
-		return true;
-	}
-
-	@Override
-	public boolean isInReverseOrder() {
-		Node cur = first;
-		for (int i = 0; i < size-1; i++) {
-			if (cur.card.compareTo(cur.next.card) > 0){
-				return false;
-			}
+			cur = cur.next;
 		}
 		return true;
 	}
