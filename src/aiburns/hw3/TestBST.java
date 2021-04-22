@@ -1,6 +1,4 @@
-package aiburns.hw3.submission;
-
-import algs.hw3.submission.BST;
+package aiburns.hw3;
 
 /**
  * Copy this class into the package where you have BST and it should run
@@ -13,7 +11,7 @@ public class TestBST {
 	}
 	
 	public static void main(String[] args) {
-		algs.hw3.submission.BST bst = new algs.hw3.submission.BST();
+		aiburns.hw3.BST bst = new aiburns.hw3.BST();
 		
 		test(bst.mostFrequent() == null);        // empty? nothing can be returned.
 		bst.truncate(2);                         // has no effect.

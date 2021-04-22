@@ -2,63 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="170bacc9-d427-472d-9f68-8394a43d8875" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw2/Q3,2,Logarithm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw2/Q3.2.NonSummation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw2/Q3.2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/CountedItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/PrimitiveTimSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/ShakespearePlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/11.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/12.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/13.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/14.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/15.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/16.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/17.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/18.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/19.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/20.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/21.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/22.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/23.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/24.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/25.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/26.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/27.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/28.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/29.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/30.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/31.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/32.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/33.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/34.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/35.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/36.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/37.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/38.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/resources/words.english.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/submission/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/submission/FibonacciTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/submission/Q1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/submission/TestBST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aiburns/hw2/ContinuousFraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw2/ContinuousFraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aiburns/hw2/DeckTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw2/DeckTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aiburns/hw2/MyDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw2/MyDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aiburns/hw2/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw2/Q2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aiburns/hw2/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw2/Q3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aiburns/hw2/WrittenQuestions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw2/WrittenQuestions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/CountedItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/CountedItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/PrimitiveTimSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/PrimitiveTimSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/ShakespearePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/ShakespearePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/14.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/15.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/17.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/18.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/19.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/21.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/22.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/23.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/24.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/25.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/26.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/27.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/28.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/28.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/29.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/30.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/32.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/33.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/33.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/34.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/34.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/35.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/35.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/36.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/36.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/37.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/37.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/38.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/38.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/plays/9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/plays/9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/resources/words.english.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/resources/words.english.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/submission/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw3/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/submission/FibonacciTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw3/FibonacciTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/submission/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw3/Q1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/submission/TestBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw3/TestBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day01/BinaryIntSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day01/DefectiveBinaryIntSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day01/TimingComparison.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/Anagram13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/Anagram15.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/CompareOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/FindMaxRecursively.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/FindMaxSecondLargestRecursively.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/FiniteOrInfinite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/NotBinaryArraySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/RandomTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day02/ThreeSumModified.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/AnagramImproved.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/CompareAlgorithms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/FindMaxSecondLargestTournament.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/SingleSpurProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/SpurExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day03/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/AnagramFinal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/DoublingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/FixedCapacityStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/ResizingArrayStackResizeStrategies.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/SmallResizingStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/HeinemanFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/MyFixedCapacityStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/OptimizedRawArraysHeinemanFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/RawArraysHeinemanFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/StriatedHeinemanFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day04/anagram/StringBuilderHeinemanFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day05/CircularBufferQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day05/CircularBufferQueueNoLast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day05/FixedCapacityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day05/TimingResults.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day06/BagInHalf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day06/Insertion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day06/LinkedListSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day06/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day06/Selection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day07/AnnotatedWastedSpaceMerge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day07/Merge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day07/MergeAnnotated.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day07/SampleTriangleNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day07/WastedSpaceMerge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/HeapBuster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/PartitionDemonstration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/PartitionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/PartitionUnnecessaryExchanges.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/PartitionWeakness.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/Quick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/RecursiveMaxFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/SortComparison.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/instrumented/Insertion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/instrumented/Merge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/instrumented/QuickAlternate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/instrumented/QuickOriginal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day08/instrumented/SortAlgorithm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day09/AnotherTimingBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day09/Bubble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day09/EqualsEqualsExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day09/LyingBinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day09/SequentialSearchST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day09/SymbolTableExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day09/TimingExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day11/MaxPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day12/Comparison.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day12/Exercise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day12/HeapSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day12/HeapSortTopDown.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day12/MaxPQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day12/SampleTilde.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day13/Arrays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day13/BadHashString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day13/Clashes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day13/LinearCheck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day13/ProbingExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day13/QuickSelect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day13/Sample.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +219,7 @@
       <recent name="C:\Users\sciab\Documents\FILES FOR SCHOOL\FreshmanYear\CS 2223\AlgosWork\src\aiburns\hw1\submission" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DeckTester">
+  <component name="RunManager" selected="Application.Q1">
     <configuration name="ContinuousFraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aiburns.hw2.ContinuousFraction" />
       <module name="AlgosWork" />
@@ -182,6 +252,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="aiburns.hw1.submission.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aiburns.hw3.Q1" />
+      <module name="AlgosWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aiburns.hw3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -229,9 +312,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,15 +330,15 @@
       <item itemvalue="Application.Q2" />
       <item itemvalue="Application.Q3" />
       <item itemvalue="Application.ContinuousFraction" />
-      <item itemvalue="Java Scratch.Scratch" />
+      <item itemvalue="Application.Q1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Q1" />
         <item itemvalue="Application.DeckTester" />
         <item itemvalue="Application.Q3" />
         <item itemvalue="Application.ContinuousFraction" />
         <item itemvalue="Application.Q2" />
-        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -314,6 +401,7 @@
       <workItem from="1618409378580" duration="12430000" />
       <workItem from="1618494965648" duration="4580000" />
       <workItem from="1618927062146" duration="666000" />
+      <workItem from="1619103755471" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="I actually did some of the work so far">
       <created>1618084993677</created>
@@ -343,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618335236168</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="This is right before I started HW3">
+      <created>1619103801226</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619103801226</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +466,8 @@
     <MESSAGE value="I fixed it, it didn't contain anything?" />
     <MESSAGE value="There is something wrong in MyDeck.java, I need to fix the copy method or something." />
     <MESSAGE value="I fixed MyDeck.java, and wrote DeckTester.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="I fixed MyDeck.java, and wrote DeckTester.java" />
+    <MESSAGE value="This is right before I started HW3" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is right before I started HW3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

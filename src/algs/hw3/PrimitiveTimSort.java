@@ -1,6 +1,4 @@
-package aiburns.hw3;
-
-import algs.hw3.CountedItem;
+package algs.hw3;
 
 /**
  * Simplified implementation of TimSort. Use this class as is. DO NOT COPY INTO YOUR PACKAGE.

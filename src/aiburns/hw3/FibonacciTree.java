@@ -1,4 +1,4 @@
-package aiburns.hw3.submission;
+package aiburns.hw3;
 
 /**
  * Bonus question only.

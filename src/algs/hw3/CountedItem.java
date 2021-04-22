@@ -1,4 +1,4 @@
-package aiburns.hw3;
+package algs.hw3;
 
 /**
  * When an item is created, it is assigned a unique counter. After

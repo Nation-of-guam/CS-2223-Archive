@@ -1,8 +1,8 @@
-package aiburns.hw3.submission;
-
-import java.util.NoSuchElementException;
+package aiburns.hw3;
 
 import edu.princeton.cs.algs4.StdOut;
+
+import java.util.NoSuchElementException;
 
 /**
  * Minimum implementation of Binary Search Tree (BST) as a Symbol Table<String, Integer>

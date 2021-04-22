@@ -1,4 +1,4 @@
-package aiburns.hw3;
+package algs.hw3;
 
 import java.io.IOException;
 import java.net.URL;

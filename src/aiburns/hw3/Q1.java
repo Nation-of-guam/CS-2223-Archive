@@ -1,4 +1,4 @@
-package aiburns.hw3.submission;
+package aiburns.hw3;
 
 import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.StopwatchCPU;
