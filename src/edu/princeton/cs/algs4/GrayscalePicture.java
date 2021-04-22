@@ -280,7 +280,7 @@ public final class GrayscalePicture implements ActionListener {
     }
 
    /**
-     * Returns the grayscale value of pixel ({@code col}, {@code row}) as a {@link Color}.
+     * Returns the grayscale value of pixel ({@code col}, {@code row}) as a {@link java.awt.Color}.
      *
      * @param col the column index
      * @param row the row index

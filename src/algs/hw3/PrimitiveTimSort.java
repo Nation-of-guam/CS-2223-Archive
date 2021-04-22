@@ -41,7 +41,7 @@ public class PrimitiveTimSort {
 
 	public static boolean isSortedArrayStable(Comparable[] A) {
 		for (int i = 1; i < A.length; i++) {
-			if (((algs.hw3.CountedItem)A[i-1]).equals((algs.hw3.CountedItem)A[i]) && !((algs.hw3.CountedItem)A[i-1]).earlier((CountedItem)A[i])) {
+			if (((CountedItem)A[i-1]).equals((CountedItem)A[i]) && !((CountedItem)A[i-1]).earlier((CountedItem)A[i])) {
 				return false; 
 			}
 		}

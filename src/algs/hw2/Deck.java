@@ -42,10 +42,8 @@ public abstract class Deck {
 	public abstract int size();
 	
 	/**
-	 * Determines whether the nth card from the top of
-	 * the deck matches the given card, c.
-	 * The parameter, n, is a value from 1 to size() of
-	 * the deck. IT IS NOT ZERO-BASED
+	 * Determines whether the nth card from the top of the deck matches the given card, c.
+	 * The parameter, n, is a value from 1 to size() of the deck. IT IS NOT ZERO-BASED
 	 * 
 	 * Performance must be O(N).
 	 */
@@ -56,7 +54,7 @@ public abstract class Deck {
 	 * Card Nodes while MODIFYING THE CURRENT DECK TO ONLY CONTAIN THE 
 	 * CARDS IN THE BOTTOM HALF OF THE DECK.
 	 * 
-	 * Current linked list retains only th first N/2 elements.
+	 * Returned linked list retains only the first N/2 elements.
 	 * 
 	 * IF THIS METHOD IS CALLED WHEN THE DECK HAS AN ODD NUMBER OF CARDS,
 	 * THEN IT MUST THROW A RuntimeException for protection.
@@ -101,11 +99,9 @@ public abstract class Deck {
 	public abstract boolean isInReverseOrder();
 	
 	/** 
-	 * Conduct an out shuffle where the deck is cut in half and
-	 * the TOP and BOTTOM cards remain in their place.
+	 * Conduct an out shuffle where the deck is cut in half and the TOP and BOTTOM cards remain in their place.
 	 * 
-	 * If the Deck contained EIGHT cards and 'first' points to
-	 * the TOP of the deck (AH below)
+	 * If the Deck contained EIGHT cards and 'first' points to the TOP of the deck (AH below) 
 	 * 
 	 * AC -> 2C -> AD -> 2D -> AH -> 2H -> AS -> 2S 
 	 * 
@@ -120,19 +116,16 @@ public abstract class Deck {
 	 *  
 	 * Which shows that the top and bottom cards remain the same. 
 	 * 
-	 * Hint: It is acceptable to create new Node objects as part of
-	 * this method, if you want.
+	 * Hint: It is acceptable to create new Node objects as part of this method, if you want.
 	 * 
 	 * Performance must be O(N) where N is the number of cards in the deck.
 	 */
 	public abstract void out();
 
 	/** 
-	 * Conduct an in shuffle where the deck is cut in half
-	 * and the TOP and BOTTOM cards remain in their place.
+	 * Conduct an in shuffle where the deck is cut in half and the TOP and BOTTOM cards remain in their place.
 	 * 
-	 * If the Deck contained EIGHT cards and 'first' points to
-	 * the TOP of the deck (AH below)
+	 * If the Deck contained EIGHT cards and 'first' points to the TOP of the deck (AH below) 
 	 * 
 	 * AC -> 2C -> AD -> 2D -> AH -> 2H -> AS -> 2S 
 	 * 
@@ -145,8 +138,7 @@ public abstract class Deck {
 	 *          
 	 * IN:      AH AC 2H 2C AS AD 2S 2D    
 	 *  
-	 * Which shows that the original top card is second, and
-	 * the original bottom card is second from the bottom.
+	 * Which shows that the original top card is second, and the original bottom card is second from the bottom.
 	 * 
 	 * Performance must be O(N) where N is the number of cards in the deck.
 	 */

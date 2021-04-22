@@ -1,7 +1,6 @@
 package aiburns.hw3;
 
 import edu.princeton.cs.algs4.StdOut;
-
 import java.util.NoSuchElementException;
 
 /**
@@ -79,7 +78,7 @@ public class BST {
 		if (n == null) { return; }
 
 		inorder (n.left);
-		StdOut.println (n.key);
+		StdOut.print(n.key);
 		inorder (n.right);
 	}
 

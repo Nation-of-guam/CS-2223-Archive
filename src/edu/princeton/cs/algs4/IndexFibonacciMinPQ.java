@@ -59,7 +59,7 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
      * Initializes an empty indexed priority queue with indices between {@code 0} and {@code N-1}
      * Worst case is O(n)
      * @param N number of keys in the priority queue, index from {@code 0} to {@code N-1}
-     * @throws IllegalArgumentException if {@code N < 0}
+     * @throws java.lang.IllegalArgumentException if {@code N < 0}
      */
 	public IndexFibonacciMinPQ(int N) {
 		if (N < 0) throw new IllegalArgumentException("Cannot create a priority queue of negative size");
@@ -73,7 +73,7 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
      * Worst case is O(n)
      * @param N number of keys in the priority queue, index from {@code 0} to {@code N-1}
      * @param C a Comparator over the keys
-     * @throws IllegalArgumentException if {@code N < 0}
+     * @throws java.lang.IllegalArgumentException if {@code N < 0}
      */
 	public IndexFibonacciMinPQ(Comparator<Key> C, int N) {
 		if (N < 0) throw new IllegalArgumentException("Cannot create a priority queue of negative size");
@@ -96,7 +96,7 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	 * Does the priority queue contains the index i ?
 	 * Worst case is O(1)
 	 * @param i an index
-	 * @throws IllegalArgumentException if the specified index is invalid
+	 * @throws java.lang.IllegalArgumentException if the specified index is invalid
 	 * @return true if i is on the priority queue, false if not
 	 */
 	
@@ -120,8 +120,8 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	 * Worst case is O(1)
 	 * @param i an index
 	 * @param key a Key associated with i
-	 * @throws IllegalArgumentException if the specified index is invalid
-	 * @throws IllegalArgumentException if the index is already in the queue
+	 * @throws java.lang.IllegalArgumentException if the specified index is invalid
+	 * @throws java.lang.IllegalArgumentException if the index is already in the queue
 	 */
 	
 	public void insert(int i, Key key) {
@@ -140,7 +140,7 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	/**
 	 * Get the index associated with the minimum key
 	 * Worst case is O(1)
-	 * @throws NoSuchElementException if the priority queue is empty
+	 * @throws java.util.NoSuchElementException if the priority queue is empty
 	 * @return the index associated with the minimum key
 	 */
 	
@@ -152,7 +152,7 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	/**
 	 * Get the minimum key currently in the queue
 	 * Worst case is O(1)
-	 * @throws NoSuchElementException if the priority queue is empty
+	 * @throws java.util.NoSuchElementException if the priority queue is empty
 	 * @return the minimum key currently in the priority queue
 	 */
 	
@@ -164,7 +164,7 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	/**
 	 * Delete the minimum key
 	 * Worst case is O(log(n)) (amortized)
-	 * @throws NoSuchElementException if the priority queue is empty
+	 * @throws java.util.NoSuchElementException if the priority queue is empty
 	 * @return the index associated with the minimum key
 	 */
 	
@@ -193,8 +193,8 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	 * Get the key associated with index i
 	 * Worst case is O(1)
 	 * @param i an index
-	 * @throws IllegalArgumentException if the specified index is invalid
-	 * @throws NoSuchElementException if the index is not in the queue
+	 * @throws java.lang.IllegalArgumentException if the specified index is invalid
+	 * @throws java.util.NoSuchElementException if the index is not in the queue
 	 * @return the key associated with index i
 	 */
 	
@@ -210,8 +210,8 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	 * If the given key is lower, Worst case is O(1) (amortized)
 	 * @param i an index
 	 * @param key the key to associate with i
-	 * @throws IllegalArgumentException if the specified index is invalid
-	 * @throws NoSuchElementException if the index has no key associated with
+	 * @throws java.lang.IllegalArgumentException if the specified index is invalid
+	 * @throws java.util.NoSuchElementException if the index has no key associated with
 	 */
 	
 	public void changeKey(int i, Key key) {
@@ -226,9 +226,9 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	 * Worst case is O(1) (amortized).
 	 * @param i an index
 	 * @param key the key to associate with i
-	 * @throws IllegalArgumentException if the specified index is invalid
-	 * @throws NoSuchElementException if the index has no key associated with
-	 * @throws IllegalArgumentException if the given key is greater than the current key
+	 * @throws java.lang.IllegalArgumentException if the specified index is invalid
+	 * @throws java.util.NoSuchElementException if the index has no key associated with
+	 * @throws java.lang.IllegalArgumentException if the given key is greater than the current key
 	 */
 	
 	public void decreaseKey(int i, Key key) {
@@ -248,9 +248,9 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	 * Worst case is O(log(n))
 	 * @param i an index
 	 * @param key the key to associate with i
-	 * @throws IllegalArgumentException if the specified index is invalid
-	 * @throws NoSuchElementException if the index has no key associated with
-	 * @throws IllegalArgumentException if the given key is lower than the current key
+	 * @throws java.lang.IllegalArgumentException if the specified index is invalid
+	 * @throws java.util.NoSuchElementException if the index has no key associated with
+	 * @throws java.lang.IllegalArgumentException if the given key is lower than the current key
 	 */
 	
 	public void increaseKey(int i, Key key) {
@@ -265,8 +265,8 @@ public class IndexFibonacciMinPQ<Key> implements Iterable<Integer> {
 	 * Deletes the key associated the given index
 	 * Worst case is O(log(n)) (amortized)
 	 * @param i an index
-	 * @throws IllegalArgumentException if the specified index is invalid
-	 * @throws NoSuchElementException if the given index has no key associated with
+	 * @throws java.lang.IllegalArgumentException if the specified index is invalid
+	 * @throws java.util.NoSuchElementException if the given index has no key associated with
 	 */
 	
 	public void delete(int i) {

@@ -8,9 +8,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="junit-jupiter-5.7.0" level="project" />
-    <orderEntry type="library" name="hamcrest-2.2" level="project" />
-    <orderEntry type="module-library" scope="TEST">
+    <orderEntry type="library" exported="" name="junit-jupiter-5.7.0" level="project" />
+    <orderEntry type="library" exported="" name="hamcrest-2.2" level="project" />
+    <orderEntry type="module-library" exported="" scope="TEST">
       <library name="JUnit5.4">
         <CLASSES>
           <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar!/" />
@@ -26,7 +26,24 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="src" level="project" />
-    <orderEntry type="module" module-name="Algorithms D2021" />
+    <orderEntry type="library" exported="" name="src" level="project" />
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.2/junit-3.8.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.2/junit-3.8.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

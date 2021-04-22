@@ -6,6 +6,9 @@ import algs.iterator.ArrayIterator;
 
 /** 
  * A Convenience class where you can retrieve all of the cards (in factory order) for the standard deck.
+ * 
+ * For an example of usage, check out the main() method for this class.
+ *
  */
 public class AllCards implements Iterable<Card> {
 	String[] all = { "AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "10C", "JC", "QC", "KC",
@@ -39,5 +42,12 @@ public class AllCards implements Iterable<Card> {
 	@Override
 	public Iterator<Card> iterator() {
 		return new CardIterator();
+	}
+	
+	/** Shows how to print out all cards in a deck. */
+	public static void main(String[] args) {
+		for (Card c : new AllCards()) {
+			System.out.println(c);
+		}
 	}
 }

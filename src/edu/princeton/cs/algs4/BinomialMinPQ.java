@@ -90,7 +90,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	/**
 	 * Number of elements currently on the priority queue
 	 * Worst case is O(log(n))
-	 * @throws ArithmeticException if there are more than 2^63-1 elements in the queue
+	 * @throws java.lang.ArithmeticException if there are more than 2^63-1 elements in the queue
 	 * @return the number of elements on the priority queue
 	 */
 	public int size() {
@@ -120,7 +120,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	/**
 	 * Get the minimum key currently in the queue
 	 * Worst case is O(log(n))
-	 * @throws NoSuchElementException if the priority queue is empty
+	 * @throws java.util.NoSuchElementException if the priority queue is empty
 	 * @return the minimum key currently in the priority queue
 	 */
 	public Key minKey() {
@@ -137,7 +137,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	/**
 	 * Deletes the minimum key
 	 * Worst case is O(log(n))
-	 * @throws NoSuchElementException if the priority queue is empty
+	 * @throws java.util.NoSuchElementException if the priority queue is empty
 	 * @return the minimum key
 	 */
 	public Key delMin() {
@@ -165,7 +165,7 @@ public class BinomialMinPQ<Key> implements Iterable<Key> {
 	 * This operation is destructive
 	 * Worst case is O(log(n))
 	 * @param heap a Binomial Heap to be merged with the current heap
-	 * @throws IllegalArgumentException if the heap in parameter is null
+	 * @throws java.lang.IllegalArgumentException if the heap in parameter is null
 	 * @return the union of two heaps
 	 */
 	public BinomialMinPQ<Key> union(BinomialMinPQ<Key> heap) {

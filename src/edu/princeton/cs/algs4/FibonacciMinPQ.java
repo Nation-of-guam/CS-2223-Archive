@@ -117,7 +117,7 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 	/**
 	 * Gets the minimum key currently in the queue
 	 * Worst case is O(1)
-	 * @throws NoSuchElementException if the priority queue is empty
+	 * @throws java.util.NoSuchElementException if the priority queue is empty
 	 * @return the minimum key currently in the priority queue
 	 */
 	public Key minKey() {
@@ -128,7 +128,7 @@ public class FibonacciMinPQ<Key> implements Iterable<Key> {
 	/**
 	 * Deletes the minimum key
 	 * Worst case is O(log(n)) (amortized)
-	 * @throws NoSuchElementException if the priority queue is empty
+	 * @throws java.util.NoSuchElementException if the priority queue is empty
 	 * @return the minimum key
 	 */
 	public Key delMin() {
