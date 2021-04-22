@@ -1,8 +1,10 @@
 package aiburns.hw2;
 
 // You will need these when you copy this class file into your USERID.hw2 area.
-import algs.hw2.*;
-
+import algs.hw2.AllCards;
+import algs.hw2.Card;
+import algs.hw2.Deck;
+import algs.hw2.State;
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.SequentialSearchST;
 
@@ -15,8 +17,8 @@ import java.lang.reflect.InvocationTargetException;
  * 
  */
 public class Q2 {
-	static int[] inResetTimes;
-	static int[] outResetTimes;
+	static int inResetTimes;
+	static int outResetTimes;
 	/**
 	 * Find all deals that bring each card to the top. Since there are multiple ones, any that
 	 * you find (which can be validated) are allowed.
@@ -26,22 +28,19 @@ public class Q2 {
 		SequentialSearchST<Card, String> shuffles = new SequentialSearchST<>();
 		
 		// Change below to instantiate YOUR DECK NOT MY FRAGMENTARY EXAMPLE
+		int length = 5;
 
-		inResetTimes = new int[25];
-		outResetTimes = new int[25];
 
-		for (int i = 1; i < inResetTimes.length; i++) {
-			MyDeck referenceDeck = new MyDeck(i);
 
-			inResetTimes[i] = DeckTester.countingTests(referenceDeck,
-					MyDeck.class.getMethod("in"),
-					MyDeck.class.getMethod("isInOrder"));
-			outResetTimes[i] = DeckTester.countingTests(referenceDeck,
-					MyDeck.class.getMethod("out"),
-					MyDeck.class.getMethod("isInOrder"));
-		}
+		Deck deck = new MyDeck(length);
 
-		Deck deck = new MyDeck(10);
+
+		inResetTimes = DeckTester.countingTests(deck.copy(),
+				MyDeck.class.getMethod("in"),
+				MyDeck.class.getMethod("isInOrder"));
+		outResetTimes = DeckTester.countingTests(deck.copy(),
+				MyDeck.class.getMethod("out"),
+				MyDeck.class.getMethod("isInOrder"));
 
 
 		
@@ -54,15 +53,86 @@ public class Q2 {
 		Queue<State> queue = new Queue<>();
 		queue.enqueue(state);
 		
+
+
 		// Until you have an entry for every possible card, continue your search
 		while (ordered.size() < deck.size()) {
-			// HERE IS WHERE YOUR LOGIC GOES.....
+			State mainState = queue.dequeue();
+
+
+			if (3*inResetTimes < mainState.shuffle.chars().filter(i -> i == 'I').count()){
+				if (3*outResetTimes < mainState.shuffle.chars().filter(i -> i == 'O').count()){
+
+				} else {
+					String outString = mainState.shuffle + "O";
+					Deck out = mainState.deck.copy();
+					out.out();
+					queue.enqueue(new State(out, outString));
+
+					if (shuffles.get(out.peekTop()) == null){
+						shuffles.put(out.peekTop(), outString);
+						ordered.put(out.peekTop(), out);
+					} else if (shuffles.get(out.peekTop()).length() > outString.length()) {
+						shuffles.put(out.peekTop(), outString);
+						ordered.put(out.peekTop(), out);
+					}
+				}
+			} else if (3*outResetTimes < mainState.shuffle.chars().filter(i -> i == 'O').count()) {
+				String inString = mainState.shuffle + "I";
+				Deck in = mainState.deck.copy();
+				in.in();
+				queue.enqueue(new State(in, inString));
+
+				if (shuffles.get(in.peekTop()) == null){
+					shuffles.put(in.peekTop(), inString);
+					ordered.put(in.peekTop(), in);
+
+				} else if (shuffles.get(in.peekTop()).length() > inString.length()) {
+					shuffles.put(in.peekTop(), inString);
+					ordered.put(in.peekTop(), in);
+
+				}
+
+			} else {
+				String inString = mainState.shuffle + "I";
+				String outString = mainState.shuffle + "O";
+
+				Deck in = mainState.deck.copy();
+				in.in();
+				Deck out = mainState.deck.copy();
+				out.out();
+
+				queue.enqueue(new State(in, inString));
+				queue.enqueue(new State(out, outString));
+
+				if (shuffles.get(in.peekTop()) == null){
+					shuffles.put(in.peekTop(), inString);
+					ordered.put(in.peekTop(), in);
+				} else if (shuffles.get(in.peekTop()).length() > inString.length()) {
+					shuffles.put(in.peekTop(), inString);
+					ordered.put(in.peekTop(), in);
+
+				}
+
+				if (shuffles.get(out.peekTop()) == null){
+					shuffles.put(out.peekTop(), outString);
+					ordered.put(out.peekTop(), out);
+
+				} else if (shuffles.get(out.peekTop()).length() > outString.length()) {
+					shuffles.put(out.peekTop(), outString);
+					ordered.put(out.peekTop(), out);
+
+				}
+			}
 		}
 		
 		for (Card c : new AllCards()) {
-			System.out.println(c + "\t" + shuffles.get(c));
+			System.out.println( c + "\t" + shuffles.get(c));
 		}
 	}
+
+
+
 
 	public static void main(String[] args) {
 		try {

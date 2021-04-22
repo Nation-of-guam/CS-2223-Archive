@@ -74,6 +74,8 @@ public class MyDeck extends Deck {
 
 
 
+
+
 	@Override
 	public Card peekTop() {
 		return first.card;
@@ -236,7 +238,6 @@ public class MyDeck extends Deck {
 	}
 
 	/**
-	 * contract::=
 	 * @return false if in reverse order, true in order
 	 */
 	@Override

@@ -2,8 +2,30 @@ Aidan Burns
 HW2
 Written Questions
 
+Q1.1.1
+
+when max_rank is a power of 2, it is 2 + logbase2(max_rank)
+It is at its max when it is 1-2^k where k is some real number
 
 Q1.3.1
 The Minimum size of deck that cannot be reversed is: 5
+
+
+Q3.1
+
+The recursive base case is 2, when N = 1
+
+Q3.2
+
+l(n)=logbase2(n)
+
+S(N)= 2 + The sum from h=1 to l(N) of h.  IE the PNG in the folder.
+OR
+S(N)= 2 + ((l(n)*(l(n)+1))/2)     This one also has a pic in the folder
+
+I got this by printing out the count, and realizing that the jump from 3 to 5 was 2, 5 to 8  was 3, 8 to 12 was 4,
+going on until the count for 4096 was 12 more than 2048's.  I then realized that the jumps were all the logbase2(n) of
+that number.
+
 
 

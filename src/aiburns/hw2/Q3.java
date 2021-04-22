@@ -45,11 +45,12 @@ Your task is to modify the program so it produces the following
 
  */
 public class Q3 {
-
-	/** 
+	static int numCalls;
+	/**
 	 * Helper method to compute base^exp as a long.
 	 */
 	static long power(int base, int exp) {
+		numCalls++;
 		return (long) Math.pow(base, exp);
 	}
 	
@@ -72,13 +73,26 @@ public class Q3 {
 		return total;
 	}
 	
+	static int log2(int n){
+		return (int) ( (Math.log(n))/(Math.log(2.0)));
+	}
+	
 	/**
 	 * Complete your analysis of the code and modify this function to return the prediction
 	 * of how many times Math.power() is called for an initial problem of size n.
+	 * This equation equals when l(n)=log(n)/log(2)
+	 * 			l(n)
+	 * f(n)= 2 + Σ h
+	 *			h=1
+	 *	or
+	 *
+	 * f(n)=2+((l(n)*(l(n)+1))/2)
 	 */
 	static long model(int n) {
-		// FIX ME
-		return 0;
+
+		int count = 2;
+		count += ((log2(n)*(log2(n)+1))/2);
+		return count;
 	}
 	
 	/**
@@ -92,18 +106,18 @@ public class Q3 {
 	
 	/** Launch the experiment. */
 	public static void main(String[] args) {
-		System.out.println("    N          Value            Actual     Predicted");
+		System.out.println("    N          Value            Actual     		Predicted");
 		for (int n = 2; n <= 4096; n *= 2) {
-			
 			int[] a = new int[n];
 			for (int i = 0; i < n; i++) { a[i] = i; }
-			
+			numCalls = 0;
 			// initiate the request on an array of size n, containing values from 0 to n-1
 			// using indices of lo=0 and hi=n-1
 			long val = proc(a, 0, n-1);
-			
 			// WILL NEED TO FIX BELOW
-			System.out.println(String.format("%6d\t%12d", n, val, 0, model(n)));
+			String printNumCalls = "C"+n + " = "+numCalls;
+			String printModel = "S("+n+") = "+ model(n);
+			System.out.println(String.format("%6d\t%12d\t%14s\t%17s", n, val, printNumCalls, printModel));
 		}
 	}
 }

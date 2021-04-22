@@ -1,5 +1,6 @@
 package aiburns.hw2;
 
+import algs.hw2.Card;
 import algs.hw2.Deck;
 
 import java.lang.reflect.InvocationTargetException;
@@ -13,8 +14,12 @@ import java.lang.reflect.Method;
 public class DeckTester {
     public static int[] factorialValues;
     public static void main(String[] args) throws Exception{
-/*
-        for (int i = 2; i < 14; i++) {
+
+        Card[] test = new Card[]{new Card("AC"), new Card("2C")};
+        System.out.println(test[0].compareTo(test[1]));
+
+
+        /*for (int i = 2; i < 14; i++) {
             MyDeck iterativeDeck = new MyDeck(i);
             System.out.println("Deck Test, n=" + i);
             System.out.println(iterativeDeck + " \n");
@@ -30,15 +35,20 @@ public class DeckTester {
             System.out.println("out Test, n=" + i);
             System.out.println(outTest + "\n ");
 
-            Deck copyTest = iterativeDeck.copy();
             System.out.println("copy Test, n=" + i);
-            System.out.println(copyTest + "\n ");
+            System.out.println(iterativeDeck + "\n ");
         }
-*/
+
+        MyDeck testDeck = new MyDeck(27);
+
+        System.out.println("\t" + 27 + "\t \t \t" +
+                countingTests(testDeck,
+                        MyDeck.class.getMethod("out"),
+                        MyDeck.class.getMethod("isInOrder")));*/
 
 
 
-        System.out.println("Q1.1");
+        /*System.out.println("Q1.1");
         System.out.println("max_rank \t #in()");
         for (int i = 1; i < 21; i++) {
             MyDeck referenceDeck = new MyDeck(i);
@@ -48,9 +58,19 @@ public class DeckTester {
                             MyDeck.class.getMethod("out"),
                             MyDeck.class.getMethod("isInOrder")));
 
+        }*/
+
+        System.out.println("Q1.1");
+        System.out.println("max_rank \t #in()");
+        for (int i = 1; i < 21; i++) {
+            MyDeck referenceDeck = new MyDeck(i);
+
+            System.out.println("\t" + i + "\t \t \t" +
+                    countingTest(referenceDeck, true));
+
         }
 
-        System.out.println("\n \n \n");
+        System.out.println("\n  \n");
 
         System.out.println("Q1.2");
         System.out.println("max_rank \t #out()");
@@ -58,13 +78,11 @@ public class DeckTester {
             MyDeck referenceDeck = new MyDeck(i);
 
             System.out.println("\t" + i + "\t \t \t" +
-                    countingTests(referenceDeck,
-                            MyDeck.class.getMethod("out"),
-                            MyDeck.class.getMethod("isInOrder")));
+                    countingTest(referenceDeck, false));
 
         }
 
-        System.out.println("\n \n \n");
+        System.out.println("\n  \n");
 
 
         System.out.println("Q1.3");
@@ -78,7 +96,7 @@ public class DeckTester {
 
 
 
-        System.out.println("\n \n \n");
+        System.out.println("\n  \n");
 
 
         System.out.println("Q1.3.1");
@@ -97,6 +115,30 @@ public class DeckTester {
         }
         System.out.println("The Minimum size of deck that cannot be reversed is: " + h);
 
+    }
+
+    protected static int countingTest(Deck deckToCheck, boolean inShuffle){
+        int toReturn = 0;
+        Deck toShuffle = deckToCheck.copy();
+        if (inShuffle){
+            toShuffle.in();
+        } else {
+            toShuffle.out();
+        }
+        toReturn++;
+
+        while (!toShuffle.isInOrder()){
+            if (inShuffle){
+                toShuffle.in();
+            } else {
+                toShuffle.out();
+            }
+            toReturn++;
+        }
+
+
+
+        return toReturn;
     }
 
     /**
