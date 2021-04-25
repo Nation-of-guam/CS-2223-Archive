@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="170bacc9-d427-472d-9f68-8394a43d8875" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/Q3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/Q4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw3/BST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw3/Q1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw3/ShakespearePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/ShakespearePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/Q4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw3/Q4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/days/day10/TestNK.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +28,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -38,6 +39,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -76,6 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AlgosGitRepo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -109,20 +112,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Q1">
-    <configuration name="ContinuousFraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aiburns.hw2.ContinuousFraction" />
-      <module name="AlgosWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aiburns.hw2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Q4">
     <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aiburns.hw3.Q1" />
       <module name="AlgosWork" />
@@ -150,12 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShakespearePlay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algs.hw3.ShakespearePlay" />
+    <configuration name="Q4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aiburns.hw3.Q4" />
       <module name="AlgosWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algs.hw3.*" />
+          <option name="PATTERN" value="aiburns.hw3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,20 +166,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Q1" />
       <item itemvalue="Application.TestBST" />
-      <item itemvalue="Application.ShakespearePlay" />
       <item itemvalue="Application.Q3" />
-      <item itemvalue="Application.ContinuousFraction" />
+      <item itemvalue="Application.Q4" />
+      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Q4" />
         <item itemvalue="Application.Q1" />
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.Q3" />
         <item itemvalue="Application.TestBST" />
-        <item itemvalue="Application.ContinuousFraction" />
-        <item itemvalue="Application.ShakespearePlay" />
       </list>
     </recent_temporary>
   </component>
@@ -259,6 +269,8 @@
       <workItem from="1619182559176" duration="688000" />
       <workItem from="1619189939391" duration="14425000" />
       <workItem from="1619214479877" duration="1023000" />
+      <workItem from="1619367509308" duration="1294000" />
+      <workItem from="1619369202409" duration="5266000" />
     </task>
     <task id="LOCAL-00001" summary="I actually did some of the work so far">
       <created>1618084993677</created>
@@ -355,11 +367,6 @@
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/aiburns/hw3/Q1.java</url>
-          <line>261</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/aiburns/hw3/BST.java</url>
           <line>235</line>
           <option name="timeStamp" value="66" />
@@ -379,5 +386,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AlgosWork$Q4.ic" NAME="Q4 Coverage Results" MODIFIED="1619368246226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>aiburns.hw3.*</FILTER>
+    </SUITE>
   </component>
 </project>

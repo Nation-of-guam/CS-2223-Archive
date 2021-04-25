@@ -224,6 +224,8 @@ public class Q1 {
 			/*
 			 *This implementation of multithreads was adapted from this stackOverflow article I found from @user aioobe
 			 * https://stackoverflow.com/questions/9664036/how-to-run-two-methods-simultaneously
+			 *
+			 * I did this because if it broke, then it would work
 			 */
 
 			Thread thread1 = new Thread() {
