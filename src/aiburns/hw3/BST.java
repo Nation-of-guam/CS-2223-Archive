@@ -35,7 +35,6 @@ public class BST {
 	// Helper method that deals with "empty nodes"
 	private int size(Node node) {
 		if (node == null) return 0;
-
 		return node.N;
 	}
 
@@ -51,6 +50,21 @@ public class BST {
 		if      (cmp < 0) return get(parent.left, key);
 		else if (cmp > 0) return get(parent.right, key);
 		else              return parent.count;
+	}
+
+	public void put(String key) {
+		root = put(root, key);
+	}
+	private Node put(Node parent, String key) {
+		if (parent == null) return new Node(key, 1, 1);
+
+		int cmp = key.compareTo(parent.key);
+		if      (cmp < 0) parent.left  = put(parent.left,  key);
+		else if (cmp > 0) parent.right = put(parent.right, key);
+		else              parent.count = parent.count + 1;
+
+		parent.N = 1 + size(parent.left) + size(parent.right);
+		return parent;
 	}
 
 	/** Invoke put on parent, should it exist. */
@@ -163,7 +177,9 @@ public class BST {
 	 * Helper method for copy()
 	 */
 	int depthCount(Node n, int depth) {
-		throw new RuntimeException("STUDENT COMPLETES");
+		if (n == null) return 0;
+		if (depth == 0) return 1;
+		return depthCount(n.left, depth -1) + depthCount(n.right, depth - 1);
 	}
 
 	/** 
@@ -171,7 +187,10 @@ public class BST {
 	 * where root has depth of 0.
 	 */
 	public int depthCount(int depth) {
-		throw new RuntimeException("STUDENT COMPLETES");
+		if (depth < 0) return 0;
+		int toReturn = 0;
+		toReturn = depthCount(root, depth);
+		return toReturn;
 	}
 
 
@@ -180,14 +199,21 @@ public class BST {
 	 * tree are used in the subsequent copy.
 	 */
 	public BST copy() {
-		throw new RuntimeException("STUDENT COMPLETES");
+		if (isEmpty()) return new BST();
+		BST toReturn = new BST();
+		toReturn.root = copy(root);
+		return toReturn;
 	}
 
 	/** 
 	 * Helper method for copy()
 	 */
 	Node copy(Node n) {
-		throw new RuntimeException("STUDENT COMPLETES");
+		if (n == null) return null;
+		Node toReturn = new Node(n.key, n.count, n.N);
+		toReturn.right = copy(n.right);
+		toReturn.left = copy(n.left);
+		return toReturn;
 	}
 
 	/**
@@ -196,7 +222,9 @@ public class BST {
 	 * then any of them can be returned as the most frequent.
 	 */
 	public String mostFrequent() {
-		throw new RuntimeException("STUDENT COMPLETES");
+		if (root == null) return null;
+		Node toReturn =  mostFrequent(root, root);
+		return toReturn.key;
 	}
 
 	/**
@@ -205,12 +233,59 @@ public class BST {
 	 * in the tree found so far.
 	 */
 	Node mostFrequent(Node n, Node best) {
-		throw new RuntimeException("STUDENT COMPLETES");
+		if (n == null) return best;
+		Node toReturn = best;
+		Node left = mostFrequent(n.left, toReturn);
+		Node right = mostFrequent(n.right, toReturn);
+		if (n.count > toReturn.count){
+			toReturn = n;
+		}
+		if ( left != null && left.count > toReturn.count){
+			toReturn = left;
+		}
+		if ( right != null&& right.count > toReturn.count){
+			toReturn = right;
+		}
+
+		return toReturn;
 	}
 
 	/** Helper method for truncate. */
 	Node truncate(Node n, int depth) {
-		throw new RuntimeException("STUDENT COMPLETES");
+		if (n == null) return null;
+		if (n.right == null && n.left == null) return n;
+		if (n.left == null) {
+			if (depth == 0){
+				n.N = 1;
+				n.right = null;
+				return n;
+			} else {
+				truncate(n.right, depth -1);
+				n.N = n.right.N + 1;
+				return n;
+			}
+		}
+		if (n.right == null) {
+			if (depth == 0){
+				n.N = 1;
+				n.left = null;
+				return n;
+			} else {
+				truncate(n.left, depth -1);
+				n.N = n.left.N + 1;
+				return n;
+			}
+		}
+		if (depth == 0){
+			n.N = 1;
+			n.left = null;
+			n.right = null;
+			return n;
+		}
+		n.left = truncate(n.left, depth -1);
+		n.right = truncate(n.right, depth -1);
+		n.N = n.right.N + n.right.N + 1;
+		return n;
 	}
 
 	/** 
@@ -221,7 +296,7 @@ public class BST {
 	 * Note: YOU NEED TO PROPERLY UPDATE COUNT FOR N 
 	 */
 	public void truncate(int depth) {
-		throw new RuntimeException("STUDENT COMPLETES");
+		truncate(root, depth);
 	}
 
 }

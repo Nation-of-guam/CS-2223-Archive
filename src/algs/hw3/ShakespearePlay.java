@@ -133,10 +133,13 @@ public class ShakespearePlay implements Iterable<String> {
 	public static void main(String[] args) throws IOException { 
 		ShakespearePlay sp = new ShakespearePlay(7);
 		System.out.println(sp.getTitle() + " has " + sp.size() + " words.");
+		int i = 0;
+		String word = "i";
 		for (String s : sp) {
-			if (s.equals("weasel")) {
-				System.out.println(s);
+			if (s.equals(word)) {
+				i++;
 			}
 		}
+		System.out.println("It says " + word + " " + i + " times!");
 	}
 }

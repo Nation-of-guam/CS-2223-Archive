@@ -5,164 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="170bacc9-d427-472d-9f68-8394a43d8875" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day01/BinaryIntSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day01/DefectiveBinaryIntSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day01/TimingComparison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/Anagram13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/Anagram15.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/CompareOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/FindMaxRecursively.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/FindMaxSecondLargestRecursively.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/FiniteOrInfinite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/NotBinaryArraySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/RandomTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day02/ThreeSumModified.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day03/AnagramImproved.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day03/CompareAlgorithms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day03/FindMaxSecondLargestTournament.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day03/SingleSpurProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day03/SpurExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day03/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/AnagramFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/DoublingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/FixedCapacityStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/ResizingArrayStackResizeStrategies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/SmallResizingStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/anagram/HeinemanFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/anagram/MyFixedCapacityStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/anagram/OptimizedRawArraysHeinemanFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/anagram/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/anagram/RawArraysHeinemanFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/anagram/StriatedHeinemanFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day04/anagram/StringBuilderHeinemanFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day05/CircularBufferQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day05/CircularBufferQueueNoLast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day05/FixedCapacityQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day05/TimingResults.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day06/BagInHalf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day06/Insertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day06/LinkedListSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day06/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day06/Selection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day07/AnnotatedWastedSpaceMerge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day07/Merge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day07/MergeAnnotated.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day07/SampleTriangleNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day07/WastedSpaceMerge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/HeapBuster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/PartitionDemonstration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/PartitionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/PartitionUnnecessaryExchanges.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/PartitionWeakness.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/Quick.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/RecursiveMaxFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/SortComparison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/instrumented/Insertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/instrumented/Merge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/instrumented/QuickAlternate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/instrumented/QuickOriginal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day08/instrumented/SortAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day09/AnotherTimingBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day09/Bubble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day09/EqualsEqualsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day09/LyingBinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day09/SequentialSearchST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day09/SymbolTableExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day09/TimingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day10/Experiment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day10/NK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day10/Notes On Hash Table Distribution.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day10/PerformanceNK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day10/Results-NK.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day10/SampleExamQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day10/SeparateChainingHashST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day10/SequentialSearchST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day10/TestNK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day11/MaxPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day12/Comparison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day12/Exercise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day12/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day12/HeapSortTopDown.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day12/MaxPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day12/SampleTilde.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day13/Arrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day13/BadHashString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day13/Clashes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day13/LinearCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day13/ProbingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day13/QuickSelect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day13/Sample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day13/TableWithStats.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day15/Q2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day15/Q3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day15/Q5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day16/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day16/ComparableTimSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day16/DeleteMinExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day16/FloorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day16/PutExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day16/TraversalExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/BSTIteratorExploration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/DeleteExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/DeleteNodeHandout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/DepthExploration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/IteratorExploration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/KeysCompCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/MaxPQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/SpeakingBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/TestRemoveLeafNodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day17/TraverseBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/AVL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/AVLDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/AVLTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/BSTIteratorExploration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/BST_OptimizedDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/CountingObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/ExploreAVLWorstCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/HeightComparison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/RedBlackBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/algs/days/day18/TreeMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/Q3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aiburns/hw3/Q4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgosWork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgosWork.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw3/BST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aiburns/hw3/Q1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw3/Q1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw1/FuzzySquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw1/FuzzySquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw1/submission/Evaluate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw1/submission/FuzzyFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw1/submission/HeisenbergFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw1/submission/ManhattanSquareFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw1/submission/Q3_Fibonacci.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw1/submission/Q3_PostFixToInfix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw1/submission/SlicerFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw2/AllCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw2/AllCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw2/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw2/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw2/submission/ContinuousFraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw2/submission/MyDeck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw2/submission/Q2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw2/submission/Q3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw2/submission/WrittenQuestions.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw3/PrimitiveTimSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/PrimitiveTimSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinomialMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/BinomialMinPQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FibonacciMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/FibonacciMinPQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GrayscalePicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/GrayscalePicture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexBinomialMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexBinomialMinPQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexFibonacciMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexFibonacciMinPQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexMultiwayMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/IndexMultiwayMinPQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinkedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinkedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinkedStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/LinkedStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/MultiwayMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/MultiwayMinPQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/PatriciaSET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/PatriciaSET.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/PatriciaST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/PatriciaST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Picture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ResizingArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ResizingArrayQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ResizingArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/ResizingArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SuffixArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SuffixArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SuffixArrayX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/SuffixArrayX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw3/ShakespearePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algs/hw3/ShakespearePlay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AlgosGitRepo/Algorithms D2021/src/algs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AlgosGitRepo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -236,7 +84,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -275,19 +123,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeckTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aiburns.hw2.DeckTester" />
-      <module name="AlgosWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aiburns.hw2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aiburns.hw3.Q1" />
       <module name="AlgosWork" />
@@ -303,11 +138,11 @@
       </method>
     </configuration>
     <configuration name="Q3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aiburns.hw2.Q3" />
+      <option name="MAIN_CLASS_NAME" value="aiburns.hw3.Q3" />
       <module name="AlgosWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aiburns.hw2.*" />
+          <option name="PATTERN" value="aiburns.hw3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -315,38 +150,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="ShakespearePlay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algs.hw3.ShakespearePlay" />
+      <module name="AlgosWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algs.hw3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+    <configuration name="TestBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aiburns.hw3.TestBST" />
+      <module name="AlgosWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aiburns.hw3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DeckTester" />
+      <item itemvalue="Application.Q1" />
+      <item itemvalue="Application.TestBST" />
+      <item itemvalue="Application.ShakespearePlay" />
       <item itemvalue="Application.Q3" />
       <item itemvalue="Application.ContinuousFraction" />
-      <item itemvalue="Application.Q1" />
-      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Q1" />
-        <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.DeckTester" />
         <item itemvalue="Application.Q3" />
+        <item itemvalue="Application.TestBST" />
         <item itemvalue="Application.ContinuousFraction" />
+        <item itemvalue="Application.ShakespearePlay" />
       </list>
     </recent_temporary>
   </component>
@@ -411,7 +254,11 @@
       <workItem from="1618927062146" duration="666000" />
       <workItem from="1619103755471" duration="729000" />
       <workItem from="1619104798815" duration="472000" />
-      <workItem from="1619105288069" duration="7669000" />
+      <workItem from="1619105288069" duration="13170000" />
+      <workItem from="1619118993235" duration="2305000" />
+      <workItem from="1619182559176" duration="688000" />
+      <workItem from="1619189939391" duration="14425000" />
+      <workItem from="1619214479877" duration="1023000" />
     </task>
     <task id="LOCAL-00001" summary="I actually did some of the work so far">
       <created>1618084993677</created>
@@ -455,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619104076089</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="This is what is going after I finished 1.1, and figuring out 1.2">
+      <created>1619113652857</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619113652857</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +338,8 @@
     <MESSAGE value="There is something wrong in MyDeck.java, I need to fix the copy method or something." />
     <MESSAGE value="I fixed MyDeck.java, and wrote DeckTester.java" />
     <MESSAGE value="This is right before I started HW3" />
-    <option name="LAST_COMMIT_MESSAGE" value="This is right before I started HW3" />
+    <MESSAGE value="This is what is going after I finished 1.1, and figuring out 1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is what is going after I finished 1.1, and figuring out 1.2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,23 +356,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/aiburns/hw3/Q1.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="54" />
+          <line>261</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/aiburns/hw3/Q1.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/aiburns/hw3/Q1.java</url>
-          <line>161</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/aiburns/hw3/Q1.java</url>
-          <line>223</line>
-          <option name="timeStamp" value="57" />
+          <url>file://$PROJECT_DIR$/src/aiburns/hw3/BST.java</url>
+          <line>235</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
@@ -525,6 +370,11 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="aiburns.hw3.BST$Node" memberName="this$0" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

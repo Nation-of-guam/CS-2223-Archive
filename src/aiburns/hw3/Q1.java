@@ -4,6 +4,7 @@ import algs.days.day16.ComparableTimSort;
 import algs.hw3.CountedItem;
 import algs.hw3.PrimitiveTimSort;
 import edu.princeton.cs.algs4.*;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -128,7 +129,6 @@ public class Q1 {
 		selectionSort(SelectionVals);
 		primitiveTimSort(TimPrim);
 		builtinSort(TimOpt);
-
 		// using this SAME ARRAY, create different CountedItem<> arrays and
 		// determine which of the sorting algorithms are stable, and which ones are not.
 		System.out.println(
@@ -138,102 +138,165 @@ public class Q1 {
 				"QuickSort: \t\t\t"+isSortedArrayStable(QuickVals)+"\n" +
 				"SelectionSort: \t\t"+isSortedArrayStable(SelectionVals)+"\n" +
 				"TimSort Primitive: \t"+isSortedArrayStable(TimPrim)+"\n" +
-				"TimSort Optimized: \t"+isSortedArrayStable(TimOpt));
+				"TimSort Optimized: \t"+isSortedArrayStable(TimOpt) + "\n");
 	}
 
 
-
-	public static void trial1_2() throws NoSuchFieldException {
-		System.out.println("Q1.2");
-
-
-
-		Integer[][] vals = new Integer[4][];
+	private static String trialnotOne(int divisor, boolean backwards){
+		String toReturn = "";
+		Integer[][] vals = new Integer[5][];
 		int[] lengths = new int[]{(1048576*1), (1048576*2), (1048576*4), (1048576*8), (1048576*16)};
 		for (int i = 0; i < vals.length; i++) {
 			vals[i] = new Integer[lengths[i]];
-			for (int j = 0; j < vals[i].length; j++){
-				vals[i][j] = StdRandom.uniform(lengths[i]);
+			if (backwards){
+				for (int j = 0; j < vals[i].length; j++){
+					vals[i][j] = lengths[i]-j;
+				}
+			} else {
+				for (int j = 0; j < vals[i].length; j++){
+					vals[i][j] = StdRandom.uniform(lengths[i]/divisor);
+				}
 			}
 		}
-
 		try {
+			Method[] algorithms = new Method[]{
+					Q1.class.getMethod("heapSort", Comparable[].class),
+					Q1.class.getMethod("mergeSort", Comparable[].class),
+					Q1.class.getMethod("quickSort", Comparable[].class),
+					Q1.class.getMethod("primitiveTimSort", Comparable[].class),
+					Q1.class.getMethod("builtinSort", Comparable[].class)
+			};
+
 			SortMethod[] methods = new SortMethod[5];
-			methods[0] = new SortMethod(class.getMethod("heapSort", Q1),  vals);
-			System.out.println(methods[0].name+" done");
-			methods[1] = new SortMethod(Q1.class.getMethod("mergeSort", Comparable[].class), vals);
-			System.out.println(methods[1].name+" done");
-			methods[2] = new SortMethod(Q1.class.getMethod("quickSort", Comparable[].class), vals);
-			System.out.println(methods[2].name+" done");
-			methods[3] = new SortMethod(Q1.class.getMethod("primitiveTimSort", Comparable[].class), vals);
-			System.out.println(methods[3].name+" done");
-			methods[4] = new SortMethod(Q1.class.getMethod("builtinSort", Comparable[].class), vals);
-			System.out.println(methods[4].name+" done");
+			for (int i = 0; i < algorithms.length; i++){
+				methods[i] = new SortMethod(algorithms[i], vals.clone());
+			}
 
 
 			builtinSort(methods);
 
-			for (int i = 0; i < methods.length; i++) {
-				System.out.print("N\t\t");
-				for(int h = 0; h < methods.length; h++){
-					System.out.print(methods[h].name+"\t\t");
-				}
-
-				for (int j = 0; j < lengths.length; j++){
-					System.out.print(lengths[j] + "\t\t");
-					for(int h = 0; h < methods.length; h++){
-						System.out.print(methods[h].time[j]+"\t\t");
-					}
-					System.out.println();
-				}
+			toReturn = toReturn + ("N\t\t\t");
+			for(int h = 0; h < methods.length; h++){
+				toReturn = toReturn + methods[h].name+"\t";
 			}
-			
+			toReturn = toReturn + "\n";
 
+			for (int j = 0; j < lengths.length-1; j++){
+				toReturn = toReturn + String.format("%2d\t\t%.3f\t%.3f\t%.3f\t%.3f\t%.3f", lengths[j],
+						methods[0].time[j],
+						methods[1].time[j],
+						methods[2].time[j],
+						methods[3].time[j],
+						methods[4].time[j]) + "\n";
+			}
+			int j = 4;
+			toReturn = toReturn + String.format("%2d\t%.3f\t%.3f\t%.3f\t%.3f\t%.3f\n", lengths[j],
+					methods[0].time[j],
+					methods[1].time[j],
+					methods[2].time[j],
+					methods[3].time[j],
+					methods[4].time[j])+ "\n";
+			return toReturn;
 		} catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e){
-			System.out.println(e + ": Idk what went wrong" );
+			System.out.println(e + " : Idk what went wrong" );
 			throw new IllegalArgumentException("idk cheif");
 		}
 	}
 
-
-
+	public static void trial1_2() throws NoSuchFieldException {
+		System.out.println( "Q1.2 \n"+ trialnotOne(1, false));
+	}
 
 	public static void trial1_3() {
-		System.out.println("Q1.3");
-		
-		// completed by student
+		System.out.println( "Q1.3 \n"+ trialnotOne(512, false));
 	}
 	
 	public static void trial1_4() {
-		System.out.println("Q1.4");
-		
-		// completed by student
+		System.out.println( "Q1.4 \n"+ trialnotOne(1, true));
+		System.out.println("My statement: This is showing how timsort is the best in all situations, and somehow quicksort"+
+				"\n ");
 	}
 	
 	public static void main(String[] args) throws IllegalArgumentException, NoSuchFieldException {
 		trial1_1();
-		trial1_2();
-		trial1_3();
-		trial1_4();
+
+		try{
+			/*
+			 *This implementation of multithreads was adapted from this stackOverflow article I found from @user aioobe
+			 * https://stackoverflow.com/questions/9664036/how-to-run-two-methods-simultaneously
+			 */
+
+			Thread thread1 = new Thread() {
+				public void run() {
+					try {
+						trial1_2();
+					} catch (NoSuchFieldException e) {
+						e.printStackTrace();
+					}
+				}
+			};
+
+			Thread thread2 = new Thread() {
+				public void run() {
+					trial1_3();
+				}
+			};
+
+			Thread thread3 = new Thread() {
+				public void run() {
+					trial1_4();
+				}
+			};
+
+			thread1.start();
+			thread2.start();
+			thread3.start();
+		} catch (Exception e){
+			trial1_2();
+			trial1_3();
+			trial1_4();
+		}
+
 	}
 
 	public static class SortMethod implements Comparable{
 		String name;
 		Double[] time;
 		protected SortMethod(Method sortType, Integer[] ... vals) throws InvocationTargetException, IllegalAccessException {
-			System.out.println("test");
-			time = new Double[]{
-					(double) sortType.invoke(vals[0].clone()),
-					(double) sortType.invoke(vals[1].clone()),
-					(double) sortType.invoke(vals[2].clone()),
-					(double) sortType.invoke(vals[3].clone())};
-			name = sortType.getName();
+			time = new Double[] {
+					(double) sortType.invoke(null, new Object[] {vals[0]}),
+					(double) sortType.invoke(null, new Object[] {vals[1]}),
+					(double) sortType.invoke(null, new Object[] {vals[2]}),
+					(double) sortType.invoke(null, new Object[] {vals[3]}),
+					(double) sortType.invoke(null, new Object[] {vals[4]})};
+			fixName(sortType);
+
+		}
+
+		private void fixName(Method sortType){
+			switch (sortType.getName()){
+				case "builtinSort":
+					name = "TimSort";
+					return;
+				case "mergeSort":
+					name = "Merge";
+					return;
+				case "primitiveTimSort":
+					name = "PrimTS";
+					return;
+				case "heapSort":
+					name = "Heap";
+					return;
+				case "quickSort":
+					name = "Quick";
+					return;
+			}
 		}
 
 		@Override
 		public int compareTo(Object o) {
 			SortMethod other = (SortMethod) o;
-			return this.time[3].compareTo(other.time[3]);
+			return this.time[4].compareTo(other.time[4]);
 		}
 	}
 
