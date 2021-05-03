@@ -121,7 +121,7 @@ public class ComparableTimSort {
      * @param workBase origin of usable space in work array
      * @param workLen usable size of work array
      */
-    public ComparableTimSort(Object[] a, Object[] work, int workBase, int workLen) {
+    private ComparableTimSort(Object[] a, Object[] work, int workBase, int workLen) {
         this.a = a;
 
         // Allocate temp storage (which may be increased later if necessary)

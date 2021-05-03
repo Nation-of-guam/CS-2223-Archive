@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AlgosGitRepo/Algorithms D2021/Algorithms D2021.iml" filepath="$PROJECT_DIR$/../AlgosGitRepo/Algorithms D2021/Algorithms D2021.iml" />
       <module fileurl="file://$PROJECT_DIR$/AlgosWork.iml" filepath="$PROJECT_DIR$/AlgosWork.iml" />
     </modules>
   </component>

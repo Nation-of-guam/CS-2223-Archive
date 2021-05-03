@@ -1,6 +1,7 @@
 package algs.days.day01;
 
 import edu.princeton.cs.algs4.StdOut;
+
 import java.util.Arrays;
 
 public class DefectiveBinaryIntSearch {

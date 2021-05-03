@@ -19,6 +19,7 @@ import java.lang.reflect.Method;
  * our dictionary?
  */
 public class Q1 {
+
 	/** Return time to sort array using merge sort. */
 	public static double mergeSort(Comparable<?>[] A) {
 		StopwatchCPU start = new StopwatchCPU();
@@ -149,11 +150,11 @@ public class Q1 {
 		for (int i = 0; i < vals.length; i++) {
 			vals[i] = new Integer[lengths[i]];
 			if (backwards){
-				for (int j = 0; j < vals[i].length; j++){
+				for (int j = 0; j < lengths[i]; j++){
 					vals[i][j] = lengths[i]-j;
 				}
 			} else {
-				for (int j = 0; j < vals[i].length; j++){
+				for (int j = 0; j < lengths[i]; j++){
 					vals[i][j] = StdRandom.uniform(lengths[i]/divisor);
 				}
 			}
@@ -171,6 +172,8 @@ public class Q1 {
 			for (int i = 0; i < algorithms.length; i++){
 				methods[i] = new SortMethod(algorithms[i], vals.clone());
 			}
+			algorithms = null;
+			vals = null;
 
 
 			builtinSort(methods);
@@ -203,18 +206,23 @@ public class Q1 {
 		}
 	}
 
-	public static void trial1_2() throws NoSuchFieldException {
-		System.out.println( "Q1.2 \n"+ trialnotOne(1, false));
+	public static String trial1_2() throws NoSuchFieldException {
+		return "Q1.2 \n"+ trialnotOne(1, false);
 	}
 
-	public static void trial1_3() {
-		System.out.println( "Q1.3 \n"+ trialnotOne(512, false));
+	public static String trial1_3() {
+		return  "Q1.3 \n"+ trialnotOne(512, false);
 	}
 	
-	public static void trial1_4() {
-		System.out.println( "Q1.4 \n"+ trialnotOne(1, true));
-		System.out.println("My statement: This is showing how timsort is the best in all situations, and somehow quicksort"+
-				"\n ");
+	public static String trial1_4() {
+		String toReturn = "Q1.4 \n"+ trialnotOne(1, true);
+		 toReturn += "\n\tMy statement: This is showing how timsort is the best in all situations, and somehow quicksort is actually trash, \n" +
+				 "and optimized timsort is for the enlightened individuals among us.  I am honnestly suprised that mergesort absolutlely \n" +
+				 "destroyed quicksort in every measuralbe way.  Heap sort sadly is almost the slowest.  At the time of writing this, I\n" +
+				 "think there may be something up with the Timsort Optimized, as it is somehow ~44x faster at sorting for Q1.2, and 1.3 \n" +
+				 "which is confusing, as with the other people I checked with only had ~1.5x-2x faster performance.  This may just be the \n" +
+				 "fact that I have 10gb of memory for the JVM.";
+		return toReturn;
 	}
 	
 	public static void main(String[] args) throws IllegalArgumentException, NoSuchFieldException {
@@ -228,31 +236,57 @@ public class Q1 {
 			 * I did this because if it broke, then it would work
 			 */
 
+			System.out.println("Get ready, this takes like 2 minutes, and then just prints them all at once \n");
+
 			Thread thread1 = new Thread() {
+				String q2;
 				public void run() {
 					try {
-						trial1_2();
+						q2 = trial1_2();
 					} catch (NoSuchFieldException e) {
 						e.printStackTrace();
 					}
 				}
+
+				public String toString(){
+					return q2;
+				}
 			};
 
 			Thread thread2 = new Thread() {
+				String q3;
 				public void run() {
-					trial1_3();
+					q3 = trial1_3();
+				}
+
+				public String toString(){
+					return q3;
 				}
 			};
 
 			Thread thread3 = new Thread() {
+				String q4;
 				public void run() {
-					trial1_4();
+					q4 = trial1_4();
+				}
+
+				public String toString(){
+					return q4;
 				}
 			};
 
 			thread1.start();
 			thread2.start();
 			thread3.start();
+
+			thread1.join();
+			thread2.join();
+			thread3.join();
+
+			System.out.println(thread1.toString());
+			System.out.println(thread2.toString());
+			System.out.println(thread3.toString());
+
 		} catch (Exception e){
 			trial1_2();
 			trial1_3();

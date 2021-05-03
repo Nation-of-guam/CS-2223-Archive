@@ -52,6 +52,17 @@ public class BST<Key extends Comparable<Key>> {
 		else if (cmp > 0) return get(parent.right, key);
 		else              return true;
 	}
+	
+	/** Height public-facing API. */
+	public int height() { return height(root); }
+	
+	/** Return the height of the binary tree rooted at parent. */
+	int height(Node parent) {
+		// Seems unusual! But has to be for the math to work out
+		if (parent == null) { return -1; }
+		
+		return 1 + Math.max(height(parent.left), height(parent.right));
+	}
 
 	/** Insert key into BST. */
 	public void insert(Key key) {
@@ -262,6 +273,27 @@ public class BST<Key extends Comparable<Key>> {
 		
 		// how do I make sure I report on the depths of my children.
 		outputDepthInfo(parent.right, myDepth + 1);
+	}
+	
+	class Pair {
+		Key key;
+		int  depth;
+		public Pair(Key k, int d) { this.key = k; this.depth = d; }
+	}
+	public Key deepestKey() { 
+		Pair p = deepestKey(root, new Pair(root.key, 0), 0); 
+		return p.key;
+	}
+	
+	Pair deepestKey(Node parent, Pair best, int depth) {
+		if (parent == null) { return best; }
+		
+		if (depth > best.depth) {
+			best = new Pair(parent.key, depth);
+		}
+		best = deepestKey(parent.left, best, depth+1);
+		best = deepestKey(parent.right, best, depth+1);
+		return best;
 	}
 	
 }

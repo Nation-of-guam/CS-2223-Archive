@@ -84,7 +84,7 @@ public class SeparateChainingHashST<Key, Value> {
 		System.out.println(s + " gives " + s.hashCode());
 		
 		
-		In in = new In ("words.english.txt");
+		In in = new In("words.english.txt");
 		StopwatchCPU create = new StopwatchCPU();
 		while (!in.isEmpty()) {
 			String word = in.readString(); 
