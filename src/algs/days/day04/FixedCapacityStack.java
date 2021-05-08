@@ -1,9 +1,8 @@
 package algs.days.day04;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Iterator;
+
+import edu.princeton.cs.algs4.*;
 
 /** Slightly modified from p. 141 implementation. */
 public class FixedCapacityStack<E> implements Iterable<E> {

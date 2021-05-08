@@ -1,7 +1,6 @@
 package algs.days.day02;
 
-import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.Stopwatch;
+import edu.princeton.cs.algs4.*;
 
 public class CompareOperation {
 	public static void main(String[] args) {

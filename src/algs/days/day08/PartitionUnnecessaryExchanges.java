@@ -1,8 +1,8 @@
 package algs.days.day08;
 
-import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Arrays;
+
+import edu.princeton.cs.algs4.StdOut;
 
 public class PartitionUnnecessaryExchanges {
 	public static void main(String[] args) {

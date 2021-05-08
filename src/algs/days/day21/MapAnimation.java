@@ -1,13 +1,13 @@
 package algs.days.day21;
 
+import java.awt.Color;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
 import algs.hw4.map.HighwayMap;
 import algs.hw4.map.Information;
 import algs.hw4.map.MapApp;
 import algs.hw4.map.Visualizer;
-
-import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
 /**
  * Builds from the HW4 resources to demonstrate BFS and DFS (even Guided) in the context

@@ -1,9 +1,8 @@
 package algs.days.day26.search;
 
-import edu.princeton.cs.algs4.Queue;
-import edu.princeton.cs.algs4.StdDraw;
+import java.awt.Color;
 
-import java.awt.*;
+import edu.princeton.cs.algs4.*;
 
 public abstract class AnimationEngine {
 

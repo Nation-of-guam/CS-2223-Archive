@@ -1,10 +1,8 @@
 package algs.days.day10;
 
-import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StopwatchCPU;
-
 import java.util.Arrays;
+
+import edu.princeton.cs.algs4.*;
 
 public class SeparateChainingHashST<Key, Value> {
 	int N;                                // number of key-value pairs
@@ -84,7 +82,7 @@ public class SeparateChainingHashST<Key, Value> {
 		System.out.println(s + " gives " + s.hashCode());
 		
 		
-		In in = new In("words.english.txt");
+		In in = new In ("words.english.txt");
 		StopwatchCPU create = new StopwatchCPU();
 		while (!in.isEmpty()) {
 			String word = in.readString(); 

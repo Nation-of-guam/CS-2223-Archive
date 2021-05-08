@@ -60,7 +60,7 @@ public class FloydWarshallExample {
 				return new Stack<Integer>();
 			}
 			
-			path.push(s);
+			path.push(t);
 		}
 		
 		return path;
@@ -96,7 +96,6 @@ public class FloydWarshallExample {
 		dig.addEdge(new DirectedEdge(2, 3, 5));
 		dig.addEdge(new DirectedEdge(3, 0, 8));
 		dig.addEdge(new DirectedEdge(4, 3, 7));
-		
 		
 		FloydWarshallExample fw = new FloydWarshallExample(dig);
 		fw.outputResults(dig);

@@ -66,7 +66,7 @@ public class FloydWarshallUndirected {
 				return new Stack<Integer>();
 			}
 			
-			path.push(s);
+			path.push(t);
 		}
 		
 		return path;

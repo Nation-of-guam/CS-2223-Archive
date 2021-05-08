@@ -90,10 +90,7 @@ public class Graph {
         for (int v = 0; v < V; v++) {
             adj[v] = new Bag<Integer>();
         }
-
     }
-
-
 
     /**  
      * Initializes a graph from the specified input stream.

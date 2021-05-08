@@ -1,6 +1,7 @@
 package algs.days.day13;
 
 import algs.days.day08.Quick;
+import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 

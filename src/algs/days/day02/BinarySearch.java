@@ -1,10 +1,7 @@
 package algs.days.day02;
 
-import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Arrays;
+import edu.princeton.cs.algs4.*;    // MUST ADD THIS AT START!
 
 /**
  * code from p. 47 of the 4ed Sedgewick

@@ -1,5 +1,6 @@
 package algs.days.day10;
 
+import edu.princeton.cs.algs4.StdRandom;
 import junit.framework.TestCase;
 
 public class TestNK extends TestCase {

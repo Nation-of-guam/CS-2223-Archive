@@ -1,9 +1,9 @@
 package algs.days.day25;
 
 import algs.days.day24.AbstractWeightedDigraph;
-import edu.princeton.cs.algs4.DijkstraSP;
+import algs.days.day24.DigraphAdjacencyList;
+import algs.days.day24.DijkstraSP;
 import edu.princeton.cs.algs4.DirectedEdge;
-import edu.princeton.cs.algs4.EdgeWeightedDigraph;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
@@ -27,7 +27,7 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class BadDijkstra {
 	
-	public static void printPaths(EdgeWeightedDigraph G, DijkstraSP sp, int s) {
+	public static void printPaths(AbstractWeightedDigraph G, DijkstraSP sp, int s) {
 		// print shortest path for a number of sample graphs.
 		for (int t = 0; t < G.V(); t++) {
 			if (sp.hasPathTo(t)) {
@@ -44,7 +44,7 @@ public class BadDijkstra {
 	}
 	public static void main(String[] args) {
 		// example graph showing Dijkstra provides different values than Bellman-Ford
-		EdgeWeightedDigraph digraph = new EdgeWeightedDigraph(5); 
+		DigraphAdjacencyList digraph = new DigraphAdjacencyList(5); 
 		digraph.addEdge(new DirectedEdge(0, 1, 3));
 		digraph.addEdge(new DirectedEdge(0, 4, 1));
 		digraph.addEdge(new DirectedEdge(1, 2, -2));  // THIS IS THE PROBLEM

@@ -1,9 +1,9 @@
 package algs.days.day03;
 
+import java.util.Optional;
+
 import edu.princeton.cs.algs4.ResizingArrayStack;
 import edu.princeton.cs.algs4.StdOut;
-
-import java.util.Optional;
 
 /**
  * Given an arrangement of tracks with a single spur that can hold up to N cars,

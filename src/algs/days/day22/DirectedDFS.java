@@ -36,7 +36,6 @@ public class DirectedDFS {
 		marked[v] = true;
 		for (int w : G.adj(v)) {
 			if (!marked[w]) {
-				numConnectedComponents++;
 				edgeTo[w] = v;
 				dfs(G, w);
 			}

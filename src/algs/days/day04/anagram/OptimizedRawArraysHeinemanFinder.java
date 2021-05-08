@@ -1,12 +1,12 @@
 package algs.days.day04.anagram;
 
 
+import java.util.Hashtable;
+
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
-
-import java.util.Hashtable;
 
 /** 
  * Subdivide words into bins by length.

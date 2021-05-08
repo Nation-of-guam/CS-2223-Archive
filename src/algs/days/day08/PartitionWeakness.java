@@ -1,8 +1,8 @@
 package algs.days.day08;
 
-import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Arrays;
+
+import edu.princeton.cs.algs4.StdOut;
 
 // size of next problem is just one smaller on SORTED list...
 public class PartitionWeakness {

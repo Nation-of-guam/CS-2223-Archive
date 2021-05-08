@@ -1,6 +1,10 @@
 package algs.days.day03;
 
-import edu.princeton.cs.algs4.*;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Stopwatch;
+import edu.princeton.cs.algs4.Stack;
 
 /** 
  * Observe that we can short-circuit a search when (a) a word does not match; and (b) we find our

@@ -1,9 +1,7 @@
 package algs.days.day04;
 
 import algs.days.day02.ThreeSumModified;
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.Stopwatch;
+import edu.princeton.cs.algs4.*;
 
 // page 177 of Sedgewick, 4ed
 

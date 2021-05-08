@@ -1,7 +1,6 @@
 package algs.days.day05;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.*;
 
 public class CircularBufferQueueNoLast<Item>  {
 	private Item[] a;    // holds the items

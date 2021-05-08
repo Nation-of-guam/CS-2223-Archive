@@ -1,9 +1,8 @@
 package algs.days.day01;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Arrays;
+
+import edu.princeton.cs.algs4.*;
 
 public class BinaryIntSearch {
 	public boolean contains(int[] collection, int target) {

@@ -3,6 +3,10 @@ package algs.days.day17;
 import java.util.Arrays;
 import java.util.Iterator;
 
+import edu.princeton.cs.algs4.Merge;
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdRandom;
+
 /**
  * Challenge here is to design an iterator for the MaxPQ that doesn't destroy the values in the PQ when
  * iterating over its values. This is a nice exercise!

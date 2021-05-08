@@ -1,7 +1,6 @@
 package algs.days.day08;
 
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.*;
 
 public class PartitionDemonstration {
 	public static void main(String[] args) {

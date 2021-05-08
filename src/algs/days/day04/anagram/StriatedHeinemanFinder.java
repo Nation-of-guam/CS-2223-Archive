@@ -1,13 +1,13 @@
 package algs.days.day04.anagram;
 
 
+import java.util.ArrayList;
+import java.util.Stack;
+
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
-
-import java.util.ArrayList;
-import java.util.Stack;
 
 /** 
  * Subdivide words into bins by length.

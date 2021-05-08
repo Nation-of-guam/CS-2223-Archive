@@ -1,7 +1,7 @@
 package algs.days.day17;
 
-import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.StdOut;
 
 public class KeysCompCount {
 	public static void main(String[] args) {

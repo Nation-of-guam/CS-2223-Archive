@@ -30,11 +30,11 @@ package algs.days.day18;
  ******************************************************************************/
 
 
+import java.util.NoSuchElementException;
+
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
-
-import java.util.NoSuchElementException;
 
 /**
  *  The <tt>BST</tt> class represents an ordered symbol table of generic

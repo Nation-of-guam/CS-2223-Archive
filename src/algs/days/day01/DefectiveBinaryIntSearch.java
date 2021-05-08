@@ -1,8 +1,8 @@
 package algs.days.day01;
 
-import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Arrays;
+
+import edu.princeton.cs.algs4.*;
 
 public class DefectiveBinaryIntSearch {
 	boolean defectiveContains(int[] collection, int target) {

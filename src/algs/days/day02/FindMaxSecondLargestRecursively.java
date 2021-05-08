@@ -1,9 +1,9 @@
 package algs.days.day02;
 
-import edu.princeton.cs.algs4.StdRandom;
-
 import java.util.Arrays;
 import java.util.Optional;
+
+import edu.princeton.cs.algs4.StdRandom;
 
 /**
  * Three different implementations that find the largest and second-largest integer in 

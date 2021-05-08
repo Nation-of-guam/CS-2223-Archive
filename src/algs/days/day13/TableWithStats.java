@@ -1,10 +1,15 @@
 package algs.days.day13;
 
-import edu.princeton.cs.algs4.*;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import edu.princeton.cs.algs4.BST;
+import edu.princeton.cs.algs4.BinarySearchST;
+import edu.princeton.cs.algs4.RedBlackBST;
+import edu.princeton.cs.algs4.ST;
+import edu.princeton.cs.algs4.SeparateChainingHashST;
+import edu.princeton.cs.algs4.SequentialSearchST;
 
 // A GOOD HASH TABLE SIZE WITH A BAD HASH TABLE SIZE
 // 524288	5.166677565713467	126.0

@@ -1,7 +1,8 @@
 package algs.hw4.map;
 
-import javax.swing.*;
 import java.io.FileInputStream;
+
+import javax.swing.JFrame;
 
 /** 
  * Standalone JFrame in which a TMG graph file is visualized.
@@ -34,7 +35,5 @@ public class MapApp extends JFrame {
 
 		MapApp ma = new MapApp(info);
 		ma.setVisible(true);
-
-
 	}
 }

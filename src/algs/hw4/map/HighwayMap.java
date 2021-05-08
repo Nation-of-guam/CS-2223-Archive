@@ -1,12 +1,12 @@
 package algs.hw4.map;
 
-import edu.princeton.cs.algs4.Graph;
-import edu.princeton.cs.algs4.SeparateChainingHashST;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Scanner;
+
+import edu.princeton.cs.algs4.Graph;
+import edu.princeton.cs.algs4.SeparateChainingHashST;
 
 /**
  * Demonstrate how to load up a TMG highway segment file into a graph. Currently

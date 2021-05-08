@@ -1,10 +1,9 @@
 package algs.days.day01;
 
-import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.StopwatchCPU;
-
 import java.util.ArrayList;
 import java.util.Collections;
+
+import edu.princeton.cs.algs4.*;
 
 public class TimingComparison {
 

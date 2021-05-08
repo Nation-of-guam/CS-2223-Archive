@@ -1,5 +1,6 @@
 package algs.days.day07;
 
+import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 // My strawman algorithm which wastes space (as I mention in the beginning of Lecture 7).

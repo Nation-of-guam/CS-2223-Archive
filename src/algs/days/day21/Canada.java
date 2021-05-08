@@ -1,10 +1,9 @@
 package algs.days.day21;
 
-import algs.hw4.map.HighwayMap;
-import algs.hw4.map.Information;
-
 import java.io.IOException;
 import java.net.URL;
+
+import algs.hw4.map.*;
 
 public class Canada {
 	public static void main(String[] args) throws IOException {

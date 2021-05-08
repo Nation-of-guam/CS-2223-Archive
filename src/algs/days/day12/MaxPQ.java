@@ -1,8 +1,8 @@
 package algs.days.day12;
 
-import edu.princeton.cs.algs4.StdRandom;
-
 import java.util.Arrays;
+
+import edu.princeton.cs.algs4.StdRandom;
 
 /**
  * This is a smaller copy of the actual MaxPQ code in the edu.princeton.cs.algs package. Done

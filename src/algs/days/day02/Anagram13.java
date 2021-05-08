@@ -1,10 +1,10 @@
 package algs.days.day02;
 
+import java.util.Date;
+
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
-
-import java.util.Date;
 
 /**
  * This will run for a long, long time....

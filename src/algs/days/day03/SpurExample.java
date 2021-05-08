@@ -1,7 +1,7 @@
 package algs.days.day03;
 
-import algs.days.day04.FixedCapacityStack;
 import edu.princeton.cs.algs4.StdIn;
+import algs.days.day04.FixedCapacityStack;
 
 public class SpurExample {
 	

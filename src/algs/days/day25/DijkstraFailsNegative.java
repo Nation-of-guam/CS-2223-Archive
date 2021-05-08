@@ -1,8 +1,9 @@
 package algs.days.day25;
 
-import edu.princeton.cs.algs4.DijkstraSP;
+import algs.days.day24.AbstractWeightedDigraph;
+import algs.days.day24.DigraphAdjacencyList;
+import algs.days.day24.DijkstraSP;
 import edu.princeton.cs.algs4.DirectedEdge;
-import edu.princeton.cs.algs4.EdgeWeightedDigraph;
 import edu.princeton.cs.algs4.SeparateChainingHashST;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
@@ -55,7 +56,7 @@ public class DijkstraFailsNegative {
 		int n = 5;
 		
 		while (true) {
-			EdgeWeightedDigraph digraph = new EdgeWeightedDigraph(n); // new In("day25.txt"));  // tinyEWDn
+			AbstractWeightedDigraph digraph = new DigraphAdjacencyList(n); 
 			SeparateChainingHashST<String, Boolean> used = new SeparateChainingHashST<>();
 			for (int i = 1; i < 6; i++) {
 				int rndn = 1;
@@ -68,7 +69,6 @@ public class DijkstraFailsNegative {
 					used.put(de.from()+":" + de.to(), true);
 				}
 			}
-			
 	
 			DijkstraSP sp = new DijkstraSP(digraph, 0);
 			

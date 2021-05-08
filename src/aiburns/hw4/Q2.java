@@ -148,6 +148,16 @@ public class Q2 {
 		return 0;
 	}
 
+
+	/**
+	 * This function finds the point farthest in a cardnal direction, IE: farthest north/south/east/west
+	 * @param info the info file to parse
+	 * @param minOrMax to find the lowest
+	 * @param northSouth true if finding min/max longitude, false for finding min/max latitude
+	 * @return returns the index/value of the point in the most extreme of a cardinal direction
+	 * @throws InvocationTargetException This exception is thrown if you don't set up Method minOrMax right
+	 * @throws IllegalAccessException This exception is thrown if you don't set up Method minOrMax right
+	 */
 	public static int superlativeVertex(Information info, Method minOrMax ,boolean northSouth) throws InvocationTargetException, IllegalAccessException {
 		SeparateChainingHashST<Integer,GPS> nodeList = info.positions;
 		Integer toReturn = 0;
@@ -200,15 +210,15 @@ public class Q2 {
 
 		System.out.println("\nBFS West to East: ");
 		for (Integer thisLoc : westBFSEast){
-			/*System.out.println(info.labels.get(thisLoc));*/
+			System.out.println(info.labels.get(thisLoc));
 			count++;
 		}
 		System.out.println(count);
 		count = 0;
 
-		System.out.println("\nBFS South to North: \n");
+		System.out.println("\nBFS South to North:");
 		for (Integer thisLoc : southBFSNorth){
-			/*System.out.println(info.labels.get(thisLoc));*/
+			System.out.println(info.labels.get(thisLoc));
 			count++;
 		}
 		System.out.println(count);
@@ -231,7 +241,7 @@ public class Q2 {
 		for (Integer thisLoc : southDFSNorth){
 			count++;
 		}
-		System.out.println(count);
+		System.out.println("Total Nodes: "+count);
 
 		Information no90 = remove_I90_segments(info);
 		north = northernMostVertex(no90);
@@ -244,22 +254,18 @@ public class Q2 {
 		Iterable<Integer> westBFSEastno90 = bfsWestno90.pathTo(east);
 		Iterable<Integer> southBFSNorthno90 = bfsSouthno90.pathTo(north);
 
-		System.out.println("\nBFS West to East: ");
+		System.out.println("\nBFS West to East, no 90: ");
 		for (Integer thisLoc : westBFSEastno90){
-/*
 			System.out.println(no90.labels.get(thisLoc));
-*/			count++;
+			count++;
 		}
-		System.out.println(count);
+		System.out.println("Total Nodes: "+count);
 		count = 0;
-		System.out.println("\nBFS South to North: ");
+		System.out.println("\nBFS South to North, no 90: ");
 		for (Integer thisLoc : southBFSNorthno90){
-/*
 			System.out.println(no90.labels.get(thisLoc));
-*/			count++;
+			count++;
 		}
 		System.out.println(count);
-		count = 0;
-
 	}
 }

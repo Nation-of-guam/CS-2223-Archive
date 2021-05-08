@@ -1001,14 +1001,14 @@ public class TreeMap<K,V>
             if (m instanceof TreeMap)
                 return ((TreeMap<E,Object>)m).keyIterator();
             else
-                return (Iterator<E>)(((NavigableSubMap)m).keyIterator());
+                return (Iterator<E>)(((TreeMap.NavigableSubMap)m).keyIterator());
         }
 
         public Iterator<E> descendingIterator() {
             if (m instanceof TreeMap)
                 return ((TreeMap<E,Object>)m).descendingKeyIterator();
             else
-                return (Iterator<E>)(((NavigableSubMap)m).descendingKeyIterator());
+                return (Iterator<E>)(((TreeMap.NavigableSubMap)m).descendingKeyIterator());
         }
 
         public int size() { return m.size(); }
@@ -1170,15 +1170,15 @@ public class TreeMap<K,V>
     /**
      * Return SimpleImmutableEntry for entry, or null if null
      */
-    static <K,V> Map.Entry<K,V> exportEntry(Entry<K,V> e) {
+    static <K,V> Map.Entry<K,V> exportEntry(TreeMap.Entry<K,V> e) {
         return e == null? null :
-            new SimpleImmutableEntry<K,V>(e);
+            new AbstractMap.SimpleImmutableEntry<K,V>(e);
     }
 
     /**
      * Return key for entry, or null if null
      */
-    static <K,V> K keyOrNull(Entry<K,V> e) {
+    static <K,V> K keyOrNull(TreeMap.Entry<K,V> e) {
         return e == null? null : e.key;
     }
 
@@ -1380,7 +1380,7 @@ public class TreeMap<K,V>
             return !inRange(key)? null  : m.remove(key);
         }
 
-        public final Entry<K,V> ceilingEntry(K key) {
+        public final Map.Entry<K,V> ceilingEntry(K key) {
             return exportEntry(subCeiling(key));
         }
 
@@ -1388,7 +1388,7 @@ public class TreeMap<K,V>
             return keyOrNull(subCeiling(key));
         }
 
-        public final Entry<K,V> higherEntry(K key) {
+        public final Map.Entry<K,V> higherEntry(K key) {
             return exportEntry(subHigher(key));
         }
 
@@ -1396,7 +1396,7 @@ public class TreeMap<K,V>
             return keyOrNull(subHigher(key));
         }
 
-        public final Entry<K,V> floorEntry(K key) {
+        public final Map.Entry<K,V> floorEntry(K key) {
             return exportEntry(subFloor(key));
         }
 
@@ -1404,7 +1404,7 @@ public class TreeMap<K,V>
             return keyOrNull(subFloor(key));
         }
 
-        public final Entry<K,V> lowerEntry(K key) {
+        public final Map.Entry<K,V> lowerEntry(K key) {
             return exportEntry(subLower(key));
         }
 
@@ -1420,25 +1420,25 @@ public class TreeMap<K,V>
             return key(subHighest());
         }
 
-        public final Entry<K,V> firstEntry() {
+        public final Map.Entry<K,V> firstEntry() {
             return exportEntry(subLowest());
         }
 
-        public final Entry<K,V> lastEntry() {
+        public final Map.Entry<K,V> lastEntry() {
             return exportEntry(subHighest());
         }
 
-        public final Entry<K,V> pollFirstEntry() {
+        public final Map.Entry<K,V> pollFirstEntry() {
 	    TreeMap.Entry<K,V> e = subLowest();
-            Entry<K,V> result = exportEntry(e);
+            Map.Entry<K,V> result = exportEntry(e);
             if (e != null)
                 m.deleteEntry(e);
             return result;
         }
 
-        public final Entry<K,V> pollLastEntry() {
+        public final Map.Entry<K,V> pollLastEntry() {
 	    TreeMap.Entry<K,V> e = subHighest();
-            Entry<K,V> result = exportEntry(e);
+            Map.Entry<K,V> result = exportEntry(e);
             if (e != null)
                 m.deleteEntry(e);
             return result;
@@ -1452,7 +1452,7 @@ public class TreeMap<K,V>
         public final NavigableSet<K> navigableKeySet() {
             KeySet<K> nksv = navigableKeySetView;
             return (nksv != null) ? nksv :
-                (navigableKeySetView = new KeySet(this));
+                (navigableKeySetView = new TreeMap.KeySet(this));
         }
 
         public final Set<K> keySet() {
@@ -1477,7 +1477,7 @@ public class TreeMap<K,V>
 
         // View classes
 
-        abstract class EntrySetView extends AbstractSet<Entry<K,V>> {
+        abstract class EntrySetView extends AbstractSet<Map.Entry<K,V>> {
             private transient int size = -1, sizeModCount;
 
             public int size() {
@@ -1503,7 +1503,7 @@ public class TreeMap<K,V>
             public boolean contains(Object o) {
                 if (!(o instanceof Map.Entry))
                     return false;
-                Entry<K,V> entry = (Entry<K,V>) o;
+                Map.Entry<K,V> entry = (Map.Entry<K,V>) o;
                 K key = entry.getKey();
                 if (!inRange(key))
                     return false;
@@ -1515,7 +1515,7 @@ public class TreeMap<K,V>
             public boolean remove(Object o) {
                 if (!(o instanceof Map.Entry))
                     return false;
-                Entry<K,V> entry = (Entry<K,V>) o;
+                Map.Entry<K,V> entry = (Map.Entry<K,V>) o;
                 K key = entry.getKey();
                 if (!inRange(key))
                     return false;
@@ -1596,12 +1596,12 @@ public class TreeMap<K,V>
 
         }
 
-        final class SubMapEntryIterator extends SubMapIterator<Entry<K,V>> {
+        final class SubMapEntryIterator extends SubMapIterator<Map.Entry<K,V>> {
             SubMapEntryIterator(TreeMap.Entry<K,V> first,
                                 TreeMap.Entry<K,V> fence) {
                 super(first, fence);
             }
-            public Entry<K,V> next() {
+            public Map.Entry<K,V> next() {
                 return nextEntry();
             }
             public void remove() {
@@ -1622,13 +1622,13 @@ public class TreeMap<K,V>
             }
         }
 
-        final class DescendingSubMapEntryIterator extends SubMapIterator<Entry<K,V>> {
+        final class DescendingSubMapEntryIterator extends SubMapIterator<Map.Entry<K,V>> {
             DescendingSubMapEntryIterator(TreeMap.Entry<K,V> last,
                                           TreeMap.Entry<K,V> fence) {
                 super(last, fence);
             }
 
-            public Entry<K,V> next() {
+            public Map.Entry<K,V> next() {
                 return prevEntry();
             }
             public void remove() {
@@ -1711,12 +1711,12 @@ public class TreeMap<K,V>
         }
 
         final class AscendingEntrySetView extends EntrySetView {
-            public Iterator<Entry<K,V>> iterator() {
+            public Iterator<Map.Entry<K,V>> iterator() {
                 return new SubMapEntryIterator(absLowest(), absHighFence());
             }
         }
 
-        public Set<Entry<K,V>> entrySet() {
+        public Set<Map.Entry<K,V>> entrySet() {
             EntrySetView es = entrySetView;
             return (es != null) ? es : new AscendingEntrySetView();
         }
@@ -1792,12 +1792,12 @@ public class TreeMap<K,V>
         }
 
         final class DescendingEntrySetView extends EntrySetView {
-            public Iterator<Entry<K,V>> iterator() {
+            public Iterator<Map.Entry<K,V>> iterator() {
                 return new DescendingSubMapEntryIterator(absHighest(), absLowFence());
             }
         }
 
-        public Set<Entry<K,V>> entrySet() {
+        public Set<Map.Entry<K,V>> entrySet() {
             EntrySetView es = entrySetView;
             return (es != null) ? es : new DescendingEntrySetView();
         }
@@ -1829,7 +1829,7 @@ public class TreeMap<K,V>
                                        fromStart, fromKey, true,
                                        toEnd, toKey, false);
         }
-        public Set<Entry<K,V>> entrySet() { throw new InternalError(); }
+        public Set<Map.Entry<K,V>> entrySet() { throw new InternalError(); }
         public K lastKey() { throw new InternalError(); }
         public K firstKey() { throw new InternalError(); }
         public SortedMap<K,V> subMap(K fromKey, K toKey) { throw new InternalError(); }
@@ -1944,7 +1944,7 @@ public class TreeMap<K,V>
     /**
      * Returns the successor of the specified Entry, or null if no such.
      */
-    static <K,V> Entry<K,V> successor(Entry<K,V> t) {
+    static <K,V> TreeMap.Entry<K,V> successor(Entry<K,V> t) {
         if (t == null)
             return null;
         else if (t.right != null) {

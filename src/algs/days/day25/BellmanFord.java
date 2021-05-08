@@ -1,7 +1,7 @@
 package algs.days.day25;
 
+import algs.days.day24.AbstractWeightedDigraph;
 import edu.princeton.cs.algs4.DirectedEdge;
-import edu.princeton.cs.algs4.EdgeWeightedDigraph;
 import edu.princeton.cs.algs4.Stack;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -13,7 +13,7 @@ public class BellmanFord {
 	private DirectedEdge[] edgeTo;           // edgeTo[v] = last edge on shortest s->v path
 	public final boolean hasNegativeCycle;   // record this 
 			
-	public BellmanFord(EdgeWeightedDigraph G, int s) {
+	public BellmanFord(AbstractWeightedDigraph G, int s) {
 		distTo = new double[G.V()];
 		edgeTo = new DirectedEdge[G.V()];
 		for (int v = 0; v < G.V(); v++) {
@@ -79,7 +79,7 @@ public class BellmanFord {
 		return path;
 	}
 
-	public static void printPaths(EdgeWeightedDigraph G, BellmanFord sp, int s) {
+	public static void printPaths(AbstractWeightedDigraph G, BellmanFord sp, int s) {
 		// print shortest path for a number of sample graphs.
 		for (int t = 0; t < G.V(); t++) {
 			if (sp.hasPathTo(t)) {

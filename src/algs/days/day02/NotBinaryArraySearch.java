@@ -1,6 +1,7 @@
 package algs.days.day02;
 
 import algs.days.day01.BinaryIntSearch;
+import edu.princeton.cs.algs4.Stopwatch;
 import edu.princeton.cs.algs4.StopwatchCPU;
 
 public class NotBinaryArraySearch {

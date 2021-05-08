@@ -1,12 +1,9 @@
 package algs.days.day04;
 
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.StdStats;
-import edu.princeton.cs.algs4.Stopwatch;
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.*;
 
 /** 
  * A Copy of resize that provides two resize strategies:
@@ -94,14 +91,14 @@ public class ResizingArrayStackResizeStrategies<Item> implements Iterable<Item> 
     /**
      * Removes and returns the item most recently added to this stack.
      * @return the item most recently added
-     * @throws NoSuchElementException if this stack is empty
+     * @throws java.util.NoSuchElementException if this stack is empty
      */
     public Item pop() {
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");
         Item item = a[N-1];
         a[N-1] = null;                              // to avoid loitering
         N--;
-
+        
         if (N > 0 && N == a.length/4) {             // shrink size of array
         	resize(a.length/2);                     // if necessary
         }
@@ -111,7 +108,7 @@ public class ResizingArrayStackResizeStrategies<Item> implements Iterable<Item> 
     /**
      * Returns (but does not remove) the item most recently added to this stack.
      * @return the item most recently added to this stack
-     * @throws NoSuchElementException if this stack is empty
+     * @throws java.util.NoSuchElementException if this stack is empty
      */
     public Item peek() {
         if (isEmpty()) throw new NoSuchElementException("Stack underflow");

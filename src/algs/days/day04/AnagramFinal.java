@@ -1,12 +1,12 @@
 package algs.days.day04;
 
+import java.util.ArrayList;
+import java.util.Stack;
+
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.Stopwatch;
-
-import java.util.ArrayList;
-import java.util.Stack;
 
 /** 
  * Rephrase this algorithm in pseudocode and see if that leads to a cleaner solution
