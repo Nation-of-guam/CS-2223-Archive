@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="170bacc9-d427-472d-9f68-8394a43d8875" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/BonusWordZipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/BonusWordZipper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/PopularSymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/PopularSymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/Q2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/TestPopular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/TestPopular.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/WordZipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/WordZipper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aiburns/hw5/WordZipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/WordZipper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DirectedEulerianPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/princeton/cs/algs4/DirectedEulerianPath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +113,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch">
+  <component name="RunManager" selected="Application.WordZipper">
     <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aiburns.hw4.Q1" />
       <module name="AlgosWork" />
@@ -156,12 +153,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aiburns.hw3.Q4" />
+    <configuration name="WordZipper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aiburns.hw5.WordZipper" />
       <module name="AlgosWork" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aiburns.hw3.*" />
+          <option name="PATTERN" value="aiburns.hw5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,19 +185,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Q4" />
       <item itemvalue="Application.Q1" />
       <item itemvalue="Application.Q2" />
       <item itemvalue="Application.Q3" />
       <item itemvalue="Java Scratch.Scratch" />
+      <item itemvalue="Application.WordZipper" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WordZipper" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.Q3" />
         <item itemvalue="Application.Q2" />
         <item itemvalue="Application.Q1" />
-        <item itemvalue="Application.Q4" />
       </list>
     </recent_temporary>
   </component>
@@ -270,9 +267,27 @@
       <workItem from="1619182559176" duration="688000" />
       <workItem from="1619189939391" duration="14425000" />
       <workItem from="1619214479877" duration="1023000" />
-      <workItem from="1619367509308" duration="1294000" />
-      <workItem from="1619369202409" duration="8385000" />
-      <workItem from="1620506468002" duration="8095000" />
+      <workItem from="1619449285109" duration="362000" />
+      <workItem from="1619450694344" duration="968000" />
+      <workItem from="1619451696082" duration="1734000" />
+      <workItem from="1619466601943" duration="70000" />
+      <workItem from="1619468033447" duration="414000" />
+      <workItem from="1619534547855" duration="309000" />
+      <workItem from="1619535437276" duration="1573000" />
+      <workItem from="1619538710024" duration="902000" />
+      <workItem from="1619617910549" duration="1808000" />
+      <workItem from="1619708099037" duration="113000" />
+      <workItem from="1619786099958" duration="433000" />
+      <workItem from="1619786560348" duration="159000" />
+      <workItem from="1619786736329" duration="4202000" />
+      <workItem from="1619803428974" duration="744000" />
+      <workItem from="1619891904851" duration="6416000" />
+      <workItem from="1619910191221" duration="3568000" />
+      <workItem from="1619974204088" duration="2060000" />
+      <workItem from="1619976309832" duration="966000" />
+      <workItem from="1619982391255" duration="1494000" />
+      <workItem from="1620048219606" duration="1336000" />
+      <workItem from="1620053666861" duration="3863000" />
     </task>
     <task id="LOCAL-00001" summary="I actually did some of the work so far">
       <created>1618084993677</created>
@@ -323,21 +338,7 @@
       <option name="project" value="LOCAL" />
       <updated>1619113652857</updated>
     </task>
-    <task id="LOCAL-00008" summary="LETS GOOOO I FINISHED Q4">
-      <created>1619384482617</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1619384482617</updated>
-    </task>
-    <task id="LOCAL-00009" summary="I am about to start HW5">
-      <created>1620507460055</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1620507460055</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,9 +369,8 @@
     <MESSAGE value="I fixed MyDeck.java, and wrote DeckTester.java" />
     <MESSAGE value="This is right before I started HW3" />
     <MESSAGE value="This is what is going after I finished 1.1, and figuring out 1.2" />
-    <MESSAGE value="LETS GOOOO I FINISHED Q4" />
-    <MESSAGE value="I am about to start HW5" />
-    <option name="LAST_COMMIT_MESSAGE" value="I am about to start HW5" />
+    <MESSAGE value="I finished Q2, and now Q3" />
+    <option name="LAST_COMMIT_MESSAGE" value="I finished Q2, and now Q3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

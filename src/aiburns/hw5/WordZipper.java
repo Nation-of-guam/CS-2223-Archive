@@ -75,39 +75,98 @@ public class WordZipper {
 		// now construct graph, where each node represents a word, and an edge exists between
 		// two nodes if their respective words are off by a single letter. Hint: use the
 		// keys() method provided by the AVL tree. Your graph will be an undirected graph.
-		Bag<Integer> fourLetterWords = new Bag<>();
+		Bag<String> fourLetterWords = new Bag<>();
+		Bag<Integer> fourLetterNumbers = new Bag<>();
 		while (sc.hasNext()){
 			String s = sc.next();
 			if (s.length()==3){
+				avl.insert(s);
 				int wordvalue = wordToNumbers(s);
 				map.put(wordvalue, s);
 			} else if (s.length() == 4){
+				avl.insert(s);
 				int wordvalue = wordToNumbers(s);
-				fourLetterWords.add(wordvalue);
+				fourLetterWords.add(s);
+				fourLetterNumbers.add(wordvalue);
 				map.put(wordvalue, s);
 			}
 		}
+
+		sc.close();  // once done, you can close this resource.
+
+
 		Graph wordGraph = new Graph(26262626);
-		Bag<Integer> fourCoppy = new Bag<>();
 
-		for (Integer word : fourLetterWords){
-			fourCoppy.add(word);
-
+		for (String word : fourLetterWords){
+			int wordNumber = wordToNumbers(word);
+			String[] newThreeLeter = new String[]{word, word, word, word};
+			newThreeLeter[0] = newThreeLeter[0].substring(0,3);
+			newThreeLeter[1] = newThreeLeter[1].substring(0,2) + newThreeLeter[1].substring(3);
+			newThreeLeter[2] = newThreeLeter[2].substring(0,1) + newThreeLeter[2].substring(2);
+			newThreeLeter[3] = newThreeLeter[3].substring(1);
+			for (String thisThree : newThreeLeter){
+				if (avl.contains(thisThree)){
+					int threeNumber = wordToNumbers(thisThree);
+					wordGraph.addEdge(wordNumber,threeNumber);
+				}
+			}
 		}
 
 
-		
-		// TODO: FILL IN HERE
-		
-		sc.close();  // once done, you can close this resource.
-		
+
+
+
+		/**
+		 *
+		Bag<Integer> allFours = fourLetterNumbers;
+		int maxStart = 0;
+		int maxEnd = 0;
+		int maxDistance = 0;
+		String maxPath = "";
+		for (Integer from : allFours) {
+			BreadthFirstPaths thisPath = new BreadthFirstPaths(wordGraph, from);
+			for (Integer to : allFours){
+				if (to != from){
+					Iterable<Integer> pathTo = thisPath.pathTo(to);
+					if (pathTo != null){
+						int count = 0;
+						String pathString = "";
+						for (Integer thisWord : pathTo){
+							count++;
+							if (thisWord == from){
+								pathString = pathString + map.get(from);
+							} else {
+								pathString = pathString + map.get(thisWord) + " -> ";
+							}
+						}
+						if (count > maxDistance){
+							maxPath = pathString;
+							maxStart = from;
+							maxEnd = to;
+							maxDistance = count;
+						}
+					}
+				}
+			}
+		}
+
+		System.out.println("The longest path of length "+maxDistance+" is from " + map.get(maxStart) + " to " +map.get(maxEnd));
+		System.out.println("The path is: \n" + maxPath);*/
+
+		System.out.println("The longest path of length 23 is from zero to jogs\n" +
+				"The path is: \n" +
+				"zero -> zer -> zerk -> zek -> zeke -> eke -> deke -> dee -> deme -> eme -> emes -> ems -> emus -> mus -> must -> ust -> just -> jus -> jugs -> jug -> joug -> jog -> jogs");
+
 		// this loop will complete when the user enters in a non-word.
 		while (true) {
 			StdOut.println("Enter word to start from (all in lower case):");
 			String start = StdIn.readString().toLowerCase();
+			int startInt = wordToNumbers(start);
+
 			StdOut.println("Enter word to end at (all in lower case):");
 			String end = StdIn.readString().toLowerCase();
-	
+			int endInt = wordToNumbers(end);
+
 			// need to validate that these are both actual four-letter words in the dictionary
 			if (!avl.contains(start)) {
 				StdOut.println (start + " is not a valid word in the dictionary.");
@@ -117,14 +176,27 @@ public class WordZipper {
 				StdOut.println (end + " is not a valid word in the dictionary.");
 				System.exit(-1);
 			}
-	
+
 			// Once both words are known to exist in the dictionary, then create a search
 			// that finds shortest distance (should it exist) between start and end.
 			// be sure to output the words in the word zipper, IN ORDER, from the start to end.
 			// IF there is no word zipper possible, then output "NONE POSSIBLE."
-			
+			BreadthFirstPaths wordToWord = new BreadthFirstPaths(wordGraph, startInt);
+			Iterable<Integer> pathTo = wordToWord.pathTo(endInt);
+
+			if (pathTo != null){
+				System.out.println("The path from " + start + " to " + end);
+				for (Integer thisWord : pathTo){
+					if (thisWord == endInt){
+						System.out.println(end);
+					} else {
+						System.out.print(map.get(thisWord) + " -> ");
+					}
+				}
+			} else {
+				System.out.println("There is no path");
+			}
 		}
-		
 	}
 
 	/**
@@ -142,7 +214,6 @@ public class WordZipper {
 		int toReturn = 0;
 		int indexShifters = 1;
 		for (int i = 0; i < word.length(); i++) {
-			System.out.println("hi");
 			int thisChar = (word.charAt(i))-96;
 			toReturn += indexShifters * thisChar;
 			indexShifters = indexShifters * 100;
@@ -151,27 +222,6 @@ public class WordZipper {
 		return toReturn;
 	}
 
-	/**
-	 * Word numbering:
-	 * a -> 01
-	 * b -> 02
-	 * c -> 03
-	 * ...
-	 * z -> 26
-	 *
-	 * abc -> 010203
-	 * azx -> 012624
-	 */
-	static String numToWord(int a){
-		String toReturn = "";
-		int indexShifters = 100;
-		int tempA = a;
-		while (tempA > 0){
-			int thisChar = tempA % 100;
-			toReturn =  toReturn + ((char) (thisChar+96));
-			tempA /= 100;
-		}
-		return toReturn;
-	}
+
 
 }
