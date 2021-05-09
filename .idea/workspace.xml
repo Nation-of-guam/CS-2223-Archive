@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="170bacc9-d427-472d-9f68-8394a43d8875" name="Default Changelist" comment="I finished Q2, and now Q3">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_122.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_5_7_01.xml" beforeDir="false" />
+    <list default="true" id="170bacc9-d427-472d-9f68-8394a43d8875" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgosWork.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgosWork.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aiburns/hw4/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw4/Q2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aiburns/hw4/Q3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw4/Q3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/BonusWordZipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/BonusWordZipper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/PopularSymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/PopularSymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/Q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/Q2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/TestPopular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/TestPopular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algs/hw5/submission/WordZipper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aiburns/hw5/WordZipper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/algs/days/day08/instrumented" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../junit-4.12.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cs2223-master/Algorithms D2021" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -92,7 +90,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -118,20 +116,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Q3">
-    <configuration name="AVLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algs.days.day18.AVLTest" />
-      <module name="AlgosWork" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algs.days.day18.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aiburns.hw4.Q1" />
       <module name="AlgosWork" />
@@ -195,20 +180,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Q4" />
-      <item itemvalue="Application.AVLTest" />
       <item itemvalue="Application.Q1" />
       <item itemvalue="Application.Q2" />
       <item itemvalue="Application.Q3" />
+      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.Q3" />
         <item itemvalue="Application.Q2" />
         <item itemvalue="Application.Q1" />
         <item itemvalue="Application.Q4" />
-        <item itemvalue="Application.AVLTest" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +272,7 @@
       <workItem from="1619214479877" duration="1023000" />
       <workItem from="1619367509308" duration="1294000" />
       <workItem from="1619369202409" duration="8385000" />
-      <workItem from="1620506468002" duration="643000" />
+      <workItem from="1620506468002" duration="8095000" />
     </task>
     <task id="LOCAL-00001" summary="I actually did some of the work so far">
       <created>1618084993677</created>
@@ -338,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619384482617</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="I am about to start HW5">
+      <created>1620507460055</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1620507460055</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,6 +357,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/AlgosGitRepo" />
@@ -369,7 +369,8 @@
     <MESSAGE value="This is right before I started HW3" />
     <MESSAGE value="This is what is going after I finished 1.1, and figuring out 1.2" />
     <MESSAGE value="LETS GOOOO I FINISHED Q4" />
-    <option name="LAST_COMMIT_MESSAGE" value="LETS GOOOO I FINISHED Q4" />
+    <MESSAGE value="I am about to start HW5" />
+    <option name="LAST_COMMIT_MESSAGE" value="I am about to start HW5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

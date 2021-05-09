@@ -1,10 +1,10 @@
-package algs.hw5.submission;
+package aiburns.hw5;
+
+import algs.hw5.Dictionary;
+import edu.princeton.cs.algs4.StopwatchCPU;
 
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-
-import edu.princeton.cs.algs4.StopwatchCPU;
-import algs.hw5.Dictionary;
 
 /**
  * More complicated ZIPPER: Bonus Questions only

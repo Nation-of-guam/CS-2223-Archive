@@ -1,9 +1,9 @@
-package algs.hw5.submission;
-
-import java.util.Iterator;
+package aiburns.hw5;
 
 import algs.iterator.ArrayIterator;
 import edu.princeton.cs.algs4.StopwatchCPU;
+
+import java.util.Iterator;
 
 /**
  * Copy this file into your SUBMISSION area and execute it to ensure all test cases pass, including

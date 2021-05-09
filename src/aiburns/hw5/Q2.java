@@ -1,4 +1,4 @@
-package algs.hw5.submission;
+package aiburns.hw5;
 
 import algs.days.day26.FloydWarshallUndirected;
 import algs.hw5.FloydWarshallSolutionAnimation;
@@ -13,7 +13,7 @@ import edu.princeton.cs.algs4.EdgeWeightedGraph;
  * the shortest distance between them is greater than any other pair of vertices in the graph.
  * 
  * In other words, can you find two locations in Massachusetts such that using the available 
- * map data, you’ve computed the shortest total distance in terms of accumulated mileage, 
+ * map data, youï¿½ve computed the shortest total distance in terms of accumulated mileage, 
  * and no other pair of vertices demands a longer trip.
  */
 public class Q2 {

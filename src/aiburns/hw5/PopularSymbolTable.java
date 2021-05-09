@@ -1,4 +1,4 @@
-package algs.hw5.submission;
+package aiburns.hw5;
 
 // use any classes you want from Sedgewick
 import edu.princeton.cs.algs4.*;
